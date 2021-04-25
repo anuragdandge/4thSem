@@ -33,10 +33,10 @@
           </p>
           <pre>
             <code class="java">
-              &lt;Button
-                 android:id="@+id/b1"
-                 android:text="Take_Picture"
-                 android::onClick="btn"/&gt;
+  &lt;Button
+         android:id="@+id/b1"
+         android:text="Take_Picture"
+         android::onClick="btn"/&gt;
           </code>
         </pre>
 
@@ -49,24 +49,24 @@
 
           <pre>
             <code class="java">
-                public class MainActivity extends Activity  
-                 { 
-                   Static int Picture = 1 ;
-                   Uri output; 
-                     public void btn(View v ) { 
-                       intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE); 
-                       File f = new ;
-                       File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");
-                       output= Uri.fromFile(f);
-                       i.putExtra(MediaStore.EXTRA_OUTPUT,output);
-                      StartActivityForResult(i,Picture);
-                    } 
-                    Protected void onActivityResult(int request, int result, Intent data) { 
+ public class MainActivity extends Activity  
+       { 
+         Static int Picture = 1 ;
+         Uri output; 
+             public void btn(View v ) { 
+                 intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE); 
+                 File f = new ;
+                 File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");
+                 output= Uri.fromFile(f);
+                 i.putExtra(MediaStore.EXTRA_OUTPUT,output);
+                 StartActivityForResult(i,Picture);
+              } 
+                 Protected void onActivityResult(int request, int result, Intent data) { 
                     If(request==Picture && Result==RESULT_OK) { 
                        Toast.makeText(this.output.toString().Toast.LENGTH_LONG).show();
                       } 
-                   } 
-                  } 
+             } 
+        } 
             </code>
           </pre>
 
