@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
   <link rel="stylesheet" href="android.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -29,49 +30,47 @@
             storage. <br />
             &nbsp;&nbsp;<em>eg.</em><br />
             &nbsp;&nbsp;&nbsp;&nbsp; 1) Add a button in your Application UI such as <em><i>ActivityMain.xml</i></em>
-
-
-
           </p>
-          <div class="code">
-            <code>
-            <article>
-              &lt;Button<br/> 
-                &nbsp;&nbsp; android:id="@+id/b1"<br/>
-                &nbsp;&nbsp;  android:text="Take_Picture"<br/>
-                &nbsp;&nbsp; android::onClick="btn"/&gt;
-            </article>
-           </code>
-          </div>
+          <pre>
+            <code class="java">
+              &lt;Button
+                 android:id="@+id/b1"
+                 android:text="Take_Picture"
+                 android::onClick="btn"/&gt;
+          </code>
+        </pre>
+
+
           <br />
           <p>
             In the <em><i> MainActivity.java </i></em> code the following lines.<br />
             &nbsp;&nbsp; &nbsp;<strong>MainActivity.java</strong><br />
           </p>
-          <div class="code">
-            <code>
-              <article>
-                public class MainActivity extends Activity <br/> 
-                &nbsp;&nbsp; { <br/>
-                  &nbsp;&nbsp;&nbsp; Static int Picture = 1 ;<br/>
-                  &nbsp;&nbsp;&nbsp; Uri output; <br/>
-                  &nbsp;&nbsp;&nbsp; public void btn(View v ) { <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE);<br/> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; File f = new ;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output= Uri.fromFile(f);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i.putExtra(MediaStore.EXTRA_OUTPUT,output);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StartActivityForResult(i,Picture);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protected void onActivityResult(int request, int result, Intent data) { <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If(request==Picture && Result==RESULT_OK) { <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Toast.makeText(this.output.toString().Toast.LENGTH_LONG).show();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
-                    &nbsp;&nbsp; } <br/>
-              </article>
-             </code>
-          </div>
+
+          <pre>
+            <code class="java">
+                public class MainActivity extends Activity  
+                 { 
+                   Static int Picture = 1 ;
+                   Uri output; 
+                     public void btn(View v ) { 
+                       intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE); 
+                       File f = new ;
+                       File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");
+                       output= Uri.fromFile(f);
+                       i.putExtra(MediaStore.EXTRA_OUTPUT,output);
+                      StartActivityForResult(i,Picture);
+                    } 
+                    Protected void onActivityResult(int request, int result, Intent data) { 
+                    If(request==Picture && Result==RESULT_OK) { 
+                       Toast.makeText(this.output.toString().Toast.LENGTH_LONG).show();
+                      } 
+                   } 
+                  } 
+            </code>
+          </pre>
+
+
           <br />
           <p>
             Essentially you are using an intent object to invoke the camera using the <strong>
@@ -84,18 +83,22 @@
             <br /> You need to add the <strong><em>&lt;uses-feature&gt;</em></strong> element to your
             androidMenifest.xml file <br />
           </p>
-          <strong> AndroidMenifest.xml</strong><br /><br />
-          <div class="code">
-            <code>
-            <article>
-              &lt; user-sdk &gt;<br/> 
-                &nbsp;&nbsp;&lt; uses-feature  android:name="android.hardware.camera"/&gt;<br/>
-                &nbsp;&nbsp;  android:text="Take_Picture"<br/>
-                &nbsp;&nbsp; android::onClick="btn"/&gt;
-                &nbsp;&nbsp;
-            </article>
-           </code>
-          </div>
+
+          <!-- Code Start -->
+<pre>
+  <code class="java">
+    AndroidMenifest.xml
+    &lt;user-sdk &gt; 
+    &lt;uses-feature 
+    android:name="android.hardware.camera"/&gt;
+    android:text="Take_Picture"
+    android::onClick="btn"/&gt;    
+  </code>
+</pre>
+          <!-- Code End -->
+
+
+
           <br />
           <h5>24/04/2021</h5><br /><br />
           <p> After running the program the toast class displaying the location of image , saved on external storage.
@@ -130,35 +133,35 @@
             using the <strong><em>" ifProviderEnable() "</em></strong> method as demonstrate in the following code ;
           </p>
           </p>
-          <div class="code">
-            <code>
-            <article>
-              <div class="method"> <h4> ACCESS_FINE_LOCATION</h4> </div>
-              <div class="method"> <h4> ACCESS_COARSE_LOCATION</h4></div>
-              &nbsp;&nbsp; Public class MainActivity extends Activity<br/> 
-                &nbsp;&nbsp; &nbsp;&nbsp; { <br/>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  LocationManager lm = (LocationManager).getSystemService(context.LOCATION_SERVICE);<br/>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Boolean gpsstatus = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);<br/>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Boolean networkstatus = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER);<br/>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if ( !gpsstatus || !networkstatus ){<br/>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Intent in = new intent (android.Provider.settings.ACTION_LOCATION_SOURCE_SETTINGS);<br/> 
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startActivity(in);<br/>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
-                &nbsp;&nbsp; &nbsp;&nbsp; } <br/>
-              </article>
-           </code>
-          </div>
+          <!-- Code Start -->
+<pre>
+  <code class="java">
+    ACCESS_FINE_LOCATION
+    ACCESS_COARSE_LOCATION
+      Public class MainActivity extends Activity 
+       { 
+         LocationManager lm = (LocationManager).getSystemService(context.LOCATION_SERVICE);
+         Boolean gpsstatus = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
+         Boolean networkstatus = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+           if ( !gpsstatus || !networkstatus ) {
+                Intent in = new intent (android.Provider.settings.ACTION_LOCATION_SOURCE_SETTINGS); 
+                startActivity(in);
+              } 
+        } 
+</code>
+  </pre>
+          <!-- Code End   -->
+          
           <br /><strong> AndroidMenifest.xml </strong>
-          <br /><br/>
-          <div class="code">
-            <code>
-              <article>
-                &lt; <strong>uses-permission</strong> android:name="android.permission.ACCESS_FILE_LOCATION"/&gt;<br/>
-                &lt; <strong>uses-permission</strong> android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;<br/>
-              </article>
+          <br /><br />
+          <pre>
+            <code class="java">         
+   &lt; uses-permission android:name="android.permission.ACCESS_FILE_LOCATION"/&gt;
+   &lt; uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
             </code>
+          </pre>
           </div>
-          <br/>
+          <br />
 
         </div>
       </div>
@@ -171,6 +174,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
