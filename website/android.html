@@ -18,17 +18,148 @@
   <div class="main">
     <div class="content">
       <div class="camera">
-        <h2 class="head"> Camera </h2>
+        <h2 class="head"> 1 ) Camera </h2>
         <h5>23/04/2021</h5>
         <div class="container">
-          <br/><p>
-            &nbsp;Most Android phones nowadays include built-in camera one at the front and one at the back . Following example shows how to programatically invoke the camera to take a picture &  then save the picture to external storage. <br/>
-            &nbsp;&nbsp;<em>eg.</em><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp; 1) Add a button in your Application UI such as ActivityMain.xml 
+          <br /><br />
+          <p>
+            &nbsp; <strong>M</strong>ost Android phones nowadays include built-in camera one at the front and one at the
+            back . Following
+            example shows how to programatically invoke the camera to take a picture & then save the picture to external
+            storage. <br />
+            &nbsp;&nbsp;<em>eg.</em><br />
+            &nbsp;&nbsp;&nbsp;&nbsp; 1) Add a button in your Application UI such as <em><i>ActivityMain.xml</i></em>
 
-            
-            
+
+
           </p>
+          <div class="code">
+            <code>
+            <article>
+              &lt;Button<br/> 
+                &nbsp;&nbsp; android:id="@+id/b1"<br/>
+                &nbsp;&nbsp;  android:text="Take_Picture"<br/>
+                &nbsp;&nbsp; android::onClick="btn"/&gt;
+            </article>
+           </code>
+          </div>
+          <br />
+          <p>
+            In the <em><i> MainActivity.java </i></em> code the following lines.<br />
+            &nbsp;&nbsp; &nbsp;<strong>MainActivity.java</strong><br />
+          </p>
+          <div class="code">
+            <code>
+              <article>
+                public class MainActivity extends Activity <br/> 
+                &nbsp;&nbsp; { <br/>
+                  &nbsp;&nbsp;&nbsp; Static int Picture = 1 ;<br/>
+                  &nbsp;&nbsp;&nbsp; Uri output; <br/>
+                  &nbsp;&nbsp;&nbsp; public void btn(View v ) { <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE);<br/> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; File f = new ;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output= Uri.fromFile(f);<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i.putExtra(MediaStore.EXTRA_OUTPUT,output);<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StartActivityForResult(i,Picture);<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Protected void onActivityResult(int request, int result, Intent data) { <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If(request==Picture && Result==RESULT_OK) { <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Toast.makeText(this.output.toString().Toast.LENGTH_LONG).show();<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
+                    &nbsp;&nbsp; } <br/>
+              </article>
+             </code>
+          </div>
+          <br />
+          <p>
+            Essentially you are using an intent object to invoke the camera using the <strong>
+              "MediaStore.ACTION_IMAGE_CAPTURE"</strong> at the same time, you are turning the camera that you want to
+            save the capture picture to external storage & name the saved picture "myphoto.jpg" , finally you call the
+            <strong>StartActivityForResult().</strong> method to fire the intent object . This ensures the once the
+            picture has been it's path will be displayed using the <strong>"Toast"</strong> class , this is done through
+            <strong>onActivityResult()</strong> call back function to ensure that your application only be installed on
+            devices with a camera . <br />
+            <br /> You need to add the <strong><em>&lt;uses-feature&gt;</em></strong> element to your
+            androidMenifest.xml file <br />
+          </p>
+          <strong> AndroidMenifest.xml</strong><br /><br />
+          <div class="code">
+            <code>
+            <article>
+              &lt; user-sdk &gt;<br/> 
+                &nbsp;&nbsp;&lt; uses-feature  android:name="android.hardware.camera"/&gt;<br/>
+                &nbsp;&nbsp;  android:text="Take_Picture"<br/>
+                &nbsp;&nbsp; android::onClick="btn"/&gt;
+                &nbsp;&nbsp;
+            </article>
+           </code>
+          </div>
+          <br />
+          <h5>24/04/2021</h5><br /><br />
+          <p> After running the program the toast class displaying the location of image , saved on external storage.
+            <br />
+          </p>
+
+          <p>
+            Specify the uses feature element in your AndroidMenifest.xml file ensure that your application can only be
+            installed on a device with a built-in camera . <br />
+          </p>
+
+
+
+        </div>
+
+      </div>
+      <div class="gps">
+        <h2 class="head"> 2 ) GPS ( Global Positioning System ) </h2>
+        <div class="container">
+          <br />
+          <p>
+            If you have location based service application they relies on the <strong><em>"GPS ( Global Positioning
+                System )"</em></strong> OR <strong><em>"Network Trangulation"</em></strong> you need to ensure that
+            relevant settings in the location service page in the setting application are enabled & are turn on and if
+            it is not how to direct the page to the user to enable the setting <br />
+          </p>
+          <p>
+            eg.<br />
+          <p>
+            To determine if location services are enabled on the device , you first obtain & instances of the location
+            manager class using this instance , you can then check weather the GPS or network provider is enabled by
+            using the <strong><em>" ifProviderEnable() "</em></strong> method as demonstrate in the following code ;
+          </p>
+          </p>
+          <div class="code">
+            <code>
+            <article>
+              <div class="method"> <h4> ACCESS_FINE_LOCATION</h4> </div>
+              <div class="method"> <h4> ACCESS_COARSE_LOCATION</h4></div>
+              &nbsp;&nbsp; Public class MainActivity extends Activity<br/> 
+                &nbsp;&nbsp; &nbsp;&nbsp; { <br/>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  LocationManager lm = (LocationManager).getSystemService(context.LOCATION_SERVICE);<br/>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Boolean gpsstatus = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);<br/>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Boolean networkstatus = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER);<br/>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; if ( !gpsstatus || !networkstatus ){<br/>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Intent in = new intent (android.Provider.settings.ACTION_LOCATION_SOURCE_SETTINGS);<br/> 
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startActivity(in);<br/>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br/>
+                &nbsp;&nbsp; &nbsp;&nbsp; } <br/>
+              </article>
+           </code>
+          </div>
+          <br /><strong> AndroidMenifest.xml </strong>
+          <br /><br/>
+          <div class="code">
+            <code>
+              <article>
+                &lt; <strong>uses-permission</strong> android:name="android.permission.ACCESS_FILE_LOCATION"/&gt;<br/>
+                &lt; <strong>uses-permission</strong> android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;<br/>
+              </article>
+            </code>
+          </div>
+          <br/>
+
         </div>
       </div>
     </div>
