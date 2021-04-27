@@ -21,6 +21,7 @@ html{
     background-color: rgb(50, 47, 88);
     float:left ;
     margin-left:0px;
+    margin-right:0px;
     color: white;
     position: absolute;
     word-spacing: 1px;
