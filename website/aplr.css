@@ -14,11 +14,11 @@ html{
     float: right;
     position: relative;
 } */
+
 .content{
     /* height: 100%; */
     width: 100%;
     background-color: rgb(50, 47, 88);
-    margin-left: 2px;
     float:left ;
     color: white;
     position: absolute;
