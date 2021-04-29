@@ -32,12 +32,10 @@
             &nbsp;&nbsp;&nbsp;&nbsp; 1) Add a button in your Application UI such as <em><i>ActivityMain.xml</i></em>
           </p>
           <pre>
-            <code class="java">
-              &lt;Button
-                 android:id="@+id/b1"
-                 android:text="Take_Picture"
-                 android::onClick="btn"/&gt;
-          </code>
+            <code class="java">&lt;Button
+   android:id="@+id/b1"
+   android:text="Take_Picture"
+   android::onClick="btn"/&gt;</code>
         </pre>
 
 
@@ -48,25 +46,24 @@
           </p>
 
           <pre>
-            <code class="java">
-                public class MainActivity extends Activity  
-                 { 
-                   Static int Picture = 1 ;
-                   Uri output; 
-                     public void btn(View v ) { 
-                       intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE); 
-                       File f = new ;
-                       File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");
-                       output= Uri.fromFile(f);
-                       i.putExtra(MediaStore.EXTRA_OUTPUT,output);
-                      StartActivityForResult(i,Picture);
-                    } 
-                    Protected void onActivityResult(int request, int result, Intent data) { 
-                    If(request==Picture && Result==RESULT_OK) { 
-                       Toast.makeText(this.output.toString().Toast.LENGTH_LONG).show();
-                      } 
-                   } 
-                  } 
+            <code class="java">public class MainActivity extends Activity  
+{ 
+  Static int Picture = 1 ;
+  Uri output; 
+  public void btn(View v ) { 
+    intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE); 
+    File f = new ;
+    File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");
+         output= Uri.fromFile(f);
+         i.putExtra(MediaStore.EXTRA_OUTPUT,output);
+         StartActivityForResult(i,Picture);
+    } 
+    Protected void onActivityResult(int request, int result, Intent data) { 
+       If(request==Picture && Result==RESULT_OK) { 
+           Toast.makeText(this.output.toString().Toast.LENGTH_LONG).show();
+         } 
+    } 
+  } 
             </code>
           </pre>
 
@@ -87,12 +84,12 @@
           <!-- Code Start -->
 <pre>
   <code class="java">
-    AndroidMenifest.xml
-    &lt;user-sdk &gt; 
-    &lt;uses-feature 
-    android:name="android.hardware.camera"/&gt;
-    android:text="Take_Picture"
-    android::onClick="btn"/&gt;    
+AndroidMenifest.xml<br/>
+  &lt;user-sdk &gt; 
+  &lt;uses-feature 
+      android:name="android.hardware.camera"
+      android:text="Take_Picture"
+      android::onClick="btn"/&gt;    
   </code>
 </pre>
           <!-- Code End -->
@@ -136,18 +133,18 @@
           <!-- Code Start -->
 <pre>
   <code class="java">
-    ACCESS_FINE_LOCATION
-    ACCESS_COARSE_LOCATION
-      Public class MainActivity extends Activity 
-       { 
-         LocationManager lm = (LocationManager).getSystemService(context.LOCATION_SERVICE);
-         Boolean gpsstatus = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
-         Boolean networkstatus = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
-           if ( !gpsstatus || !networkstatus ) {
-                Intent in = new intent (android.Provider.settings.ACTION_LOCATION_SOURCE_SETTINGS); 
-                startActivity(in);
-              } 
-        } 
+ACCESS_FINE_LOCATION
+ACCESS_COARSE_LOCATION<br/>
+  Public class MainActivity extends Activity 
+    { 
+      LocationManager lm = (LocationManager).getSystemService(context.LOCATION_SERVICE);
+      Boolean gpsstatus = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
+      Boolean networkstatus = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+         if ( !gpsstatus || !networkstatus ) {
+             Intent in = new intent (android.Provider.settings.ACTION_LOCATION_SOURCE_SETTINGS); 
+             startActivity(in);
+           } 
+    } 
 </code>
   </pre>
           <!-- Code End   -->
