@@ -33,10 +33,10 @@
           </p>
           <pre>
             <code class="java">
-  &lt;Button
-         android:id="@+id/b1"
-         android:text="Take_Picture"
-         android::onClick="btn"/&gt;
+              &lt;Button
+                 android:id="@+id/b1"
+                 android:text="Take_Picture"
+                 android::onClick="btn"/&gt;
           </code>
         </pre>
 
@@ -49,24 +49,24 @@
 
           <pre>
             <code class="java">
- public class MainActivity extends Activity  
-       { 
-         Static int Picture = 1 ;
-         Uri output; 
-             public void btn(View v ) { 
-                 intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE); 
-                 File f = new ;
-                 File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");
-                 output= Uri.fromFile(f);
-                 i.putExtra(MediaStore.EXTRA_OUTPUT,output);
-                 StartActivityForResult(i,Picture);
-              } 
-                 Protected void onActivityResult(int request, int result, Intent data) { 
+                public class MainActivity extends Activity  
+                 { 
+                   Static int Picture = 1 ;
+                   Uri output; 
+                     public void btn(View v ) { 
+                       intent i = new intent (MediaStore.ACTION_IMAGE_CAPTURE); 
+                       File f = new ;
+                       File(Environment.getExternalStorageDirectory(),"MyPhoto.jpg");
+                       output= Uri.fromFile(f);
+                       i.putExtra(MediaStore.EXTRA_OUTPUT,output);
+                      StartActivityForResult(i,Picture);
+                    } 
+                    Protected void onActivityResult(int request, int result, Intent data) { 
                     If(request==Picture && Result==RESULT_OK) { 
                        Toast.makeText(this.output.toString().Toast.LENGTH_LONG).show();
                       } 
-             } 
-        } 
+                   } 
+                  } 
             </code>
           </pre>
 
@@ -151,7 +151,11 @@
 </code>
   </pre>
           <!-- Code End   -->
-          
+          <hr>
+          <h5>29/04/2021</h5><br/><br/>
+          <p>
+            &nbsp; If a perticular setting is not enabled , you can use an intent object to direct the user to the setting page . You also need to ensure that you add the relevant permission in your AndroidMenifest.xml file.  
+          </p>
           <br /><strong> AndroidMenifest.xml </strong>
           <br /><br />
           <pre>
@@ -160,6 +164,11 @@
    &lt; uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
             </code>
           </pre>
+          <div class="note" style="background-color: rgb(160, 125, 125); padding:1em; border-radius: 10px;">
+            
+              <h4 style="color: red;">Note :- </h4> You are not allowed to Programatically turn on the GPS or Network Provider .
+          
+          </div>
           </div>
           <br />
 
