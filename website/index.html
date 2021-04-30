@@ -12,6 +12,35 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title> Home </title>
+  <style>
+#btn-group{
+  margin: 2px;
+  width: 100%;
+  padding:2px;
+}
+#but{
+  width: 70%;
+  padding: 2px;
+}
+#lnk{
+  margin-left: 1em;
+}
+.abso{
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  height: 2em;
+  border-radius: 7px;
+  background-color: aliceblue;
+}
+#txt{
+  margin-top: .2em;
+ float: left;
+margin-left: 1em;
+}
+
+
+  </style>
 </head>
 
 <body>
@@ -24,8 +53,18 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav" id="navbar-nav">
+
+          <!-- Dropdown Starts -->
+          <!-- <div class="drp-dwn">
+            <div class="butn"></div>
+            <div class="list"></div>
+          </div> -->
+         
+          <!-- Dropdown Ends -->
+
           <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#" id="brand">B.Sc IT 4th Sem  </a>
                     </li> -->
@@ -52,135 +91,90 @@
   <!-- Navigation Bar End -->
 
   <div class="main">
-
-
+    
+    
+     
     <div class="container">
-     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-         For notes  click here 👆
+      
+      <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div> 
-      <div class="accordion" id="accordionExample">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for notes  click here 👆
+      </div> -->
+<!-- Dropdown Experiment -->
+<!-- Example split danger button -->
+<div class="btn-group" id="btn-group">
+  <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="aplr.html" style="text-decoration: none;float: left;">APLR </a>  </button>
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+   Chapter <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/aplr.html#NumberSystem"> Number System</a></li>
+    <li><a class="dropdown-item" href="/aplr.html#Numbers"> Numbers </a></li>
+    <li><a class="dropdown-item" href="/aplr.html#facevalue"> Face Value & Place Value </a></li>
+    <li><a class="dropdown-item" href="/aplr.html#testOfDivisibility"> Test of Divisibility</a></li>
+  </ul>
+</div>
+<div class="btn-group" id="btn-group">
+  <button type="button" class="btn btn-light" id="but"> <a  id="lnk" href="android.html" style="text-decoration: none;float: left;">Adv. Android </a>  </button>
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+   Chapter <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/android.html#camera"> Camera </a></li>
+    <li><a class="dropdown-item" href="/android.html#gps"> GPS </a></li>
+    <li><a class="dropdown-item" href="/android.html#accelerometer"> Accelerometer </a></li>
+    <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+  </ul>
+</div>
+<div class="btn-group" id="btn-group">
+  <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="adbms.html" style="text-decoration: none;float: left;"> ADBMS </a>  </button>
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+   Chapter <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    
+    <li><a class="dropdown-item" href="/adbms.html#sqlfunction">SQL Function </a></li>
 
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <br />
-              <p>
-                <br /> <b class="display-6">APLR (Aptitude Logical Reasoning </b><br /><br />
-              </p>
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p class="card-text">
-                   <img class="img-fluid" src="Images/APLR.jpg" alt="loading" srcset="" height="auto" width="auto">
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-
-              <br />
-              <p>
-                <br /> <b class="display-6"> Advance Android Application Development </b><br /><br />
-                
-              </p>
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-<img class="img-fluid" src="Images/Android.jpg" alt="">             
-
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <br />
-              <p>
-                <br /> <b class="display-6"> SPM (Software Project Mangement </b><br /><br />
-
-               
-              </p>
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p class="card-text">
-
-              <img class="img-fluid" src="Images/SPM.jpg" alt="" srcset="">
-
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              <br />
-              <p>
-                <br /> <b class="display-6"> ADBMS (Advance Database Management System </b><br /><br />
-
-
-              </p>
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p class="card-text">
-
-              <img class="img-fluid" src="Images/ADBMS.jpg" alt="" srcset="">
-
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              <br />
-              <p>
-                <br /> <b class="display-6">IT Tools and Web Designing III :- - </b><br /><br />
-              </p>
-            </button>
-          </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p class="card-text">
-
-               <img class="img-fluid" src="Images/ItTools.jpg" alt="" srcset="">
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-
+    <li><a class="dropdown-item" href="/adbms.html#methods"> Methods </a></li>
+    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+  </ul>
+</div>
+<div class="btn-group" id="btn-group">
+  <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="spm.html" style="text-decoration: none;float: left;"> SPM  </a>  </button>
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+   Chapter <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div><div class="btn-group" id="btn-group">
+  <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="ittools3.html" style="text-decoration: none; float: left;"> IT Tools - III </a>  </button>
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+   Chapter <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
 
     </div>
   </div>
-
-
+  
+<div class="abso" >
+  <p id="txt"> © All Rights Reserved  2021</p>
+</div>
+  <!-- <footer class="footer mt-auto py-3 bg-light abso">
+  </footer> -->
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
