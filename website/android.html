@@ -82,7 +82,7 @@
           </p>
 
           <!-- Code Start -->
-<pre>
+          <pre>
   <code class="java">
 AndroidMenifest.xml<br/>
   &lt;user-sdk &gt; 
@@ -113,7 +113,7 @@ AndroidMenifest.xml<br/>
 
       </div>
       <div class="gps">
-        <h2 class="head"> 2 ) GPS  </h2>
+        <h2 class="head"> 2 ) GPS </h2>
         <div class="container">
           <br />
           <p>
@@ -131,7 +131,7 @@ AndroidMenifest.xml<br/>
           </p>
           </p>
           <!-- Code Start -->
-<pre>
+          <pre>
   <code class="java">
 ACCESS_FINE_LOCATION
 ACCESS_COARSE_LOCATION<br/>
@@ -149,9 +149,11 @@ ACCESS_COARSE_LOCATION<br/>
   </pre>
           <!-- Code End   -->
           <hr>
-          <h5>29/04/2021</h5><br/><br/>
+          <h5>29/04/2021</h5><br /><br />
           <p>
-            &nbsp; If a perticular setting is not enabled , you can use an intent object to direct the user to the setting page . You also need to ensure that you add the relevant permission in your AndroidMenifest.xml file.  
+            &nbsp; If a perticular setting is not enabled , you can use an intent object to direct the user to the
+            setting page . You also need to ensure that you add the relevant permission in your AndroidMenifest.xml
+            file.
           </p>
           <br /><strong> AndroidMenifest.xml </strong>
           <br /><br />
@@ -162,16 +164,43 @@ ACCESS_COARSE_LOCATION<br/>
             </code>
           </pre>
           <div class="note" style="background-color: rgb(160, 125, 125); padding:1em; border-radius: 10px;">
-            
-              <h4 style="color: red;">Note :- </h4> You are not allowed to Programatically turn on the GPS or Network Provider .
-          
-          </div>
-          </div>
-          <br />
 
+            <h4 style="color: red;">Note :- </h4> You are not allowed to Programatically turn on the GPS or Network
+            Provider .
+
+          </div>
         </div>
+        <br />
+
+      </div>
+      <hr>
+      <div class="accelerometer">
+        <h2 class="head"> 3) Accelerometer</h2>
+        <h5>30/04/2021</h5><br />
+      <br/>
+        <div class="container">
+        <p>  &nbsp;<b># Introduction Accelerometer :- </b><br/>
+         &nbsp;&nbsp;&nbsp; Accelerometer as there name suggest are use to measure acceleration , acceleration is define as rate of change
+          of velocity so they measure how quickly the speed of the device is changing in a given direction using an
+          Accelerometer you can detect movement and more use of the rate of the change of the speed of that moment
+          generally you will be intrested in acceleration changes relative to a rapid movement such as use for user
+          input in the formal case you will often need to the device to calculate the initial orientation and
+          acceleration to take effects ito in future result .
+        </p>
+        
+        <p>
+          &nbsp;<b># Detecting Acceleration Changes :- </b><br/>
+          &nbsp;&nbsp;&nbsp;  Acceleration can be measured along there directional Axis forward , backward , left , right and up-down the sensor manager report sensor changes in all three direction (in the three axis).<br/><br/>
+          &nbsp;&nbsp;&nbsp; Vertical upward or downward where positive represent upward moment such as device being lifted up .<br/><br/>
+          &nbsp;&nbsp;&nbsp; longitudinal forward or backward acceleration were forward acceleration is positive , these represent a device flat on its background facing up and in orientation being moved along the desk in the direction of the top of the device . <br/><br/>
+          &nbsp;&nbsp;&nbsp; Lateral Sideway acceleration where positive value represent moment forward the right of the device and negative value show moments forward the left in the same description aa describe in the longitudinal movement would be created by moving the device along surface to your right . 
+
+        </p>
+
+      </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Optional JavaScript; choose one of the two! -->
