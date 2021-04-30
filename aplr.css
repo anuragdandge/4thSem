@@ -2,26 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 html{
     scroll-behavior: smooth;
+    
+}
+body{
+    background-color: rgb(63, 38, 109);
 }
 .main{
     display:flexbox;
+    margin-left: 0px;
+    margin-right: 0px;
 }
-/* .nav{
-    
-    width: 20%;
-    background-color: rgba(0, 0, 0, 0.336);
-    margin-right: 2px;
-    float: right;
-    position: relative;
-} */
 
 .content{
-    /* height: 100%; */
     width: 100%;
     background-color: rgb(50, 47, 88);
+    margin-left: 0px;
+    margin-right: 0px;
     float:left ;
-    margin-left:0px;
-    margin-right:0px;
     color: white;
     position: absolute;
     word-spacing: 1px;
@@ -43,10 +40,46 @@ h5{
 p{
     font-family: 'Montserrat', sans-serif;
 }
+li{
+    font-family: 'Montserrat', sans-serif;
+
+}
 td{
     text-align: center;color: white;
 }
 th{
     text-align: center;color: white;
+
+}
+#btn-group {
+    margin-top: 2px;
+    width: 98%;
+    padding: 2px;
+}
+
+#but {
+    width: 70%;
+    padding: 2px;
+}
+
+#lnk {
+    margin-left: 1em;
+}
+
+.container {
+margin-top: 1em;
+margin-bottom: 1em;
+}
+#bold {
+    font-weight: bolder;
+}
+
+#navbarDropdown {
+    font-weight: bolder;
+
+}
+
+#nav-link {
+    font-weight: bolder;
 
 }
