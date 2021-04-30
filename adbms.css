@@ -10,6 +10,8 @@ body{
 .main{
     width: 100%;
     background-color: rgb(50, 47, 88);
+    margin-left: 0px;
+    margin-right: 0px;
     float:left ;
     color: white;
     position: absolute;
@@ -30,9 +32,35 @@ p{
 }
 li{
     font-family: 'Montserrat', sans-serif;
-
 }
 .container{
-    margin-top:40px;
+    /* margin-top:40px; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#bold {
+    font-weight: bolder;
+}
+#navbarDropdown{
+    font-weight: bolder;
 
 }
+#nav-link{
+    font-weight: bolder;
+
+}
+#btn-group{
+    margin-top: 2px ;
+    width: 98%;
+    padding:2px;
+  }
+  #but{
+    width: 70%;
+    padding: 2px;
+  }
+  #lnk{
+    margin-left: 1em;
+  }
+  #bold{
+    font-weight: bolder;
+  }
