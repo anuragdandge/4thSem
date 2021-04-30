@@ -8,11 +8,13 @@ html{
 }
 .main{
     display:flexbox;
+
 }
 
 .content{
     width: 100%;
     background-color: rgb(50, 47, 88);
+    margin-left: 0px;
     float:left ;
     color: white;
     position: absolute;
@@ -59,3 +61,26 @@ article{
     color: rgb(46, 89, 153);
     margin-left: 1em;
 }
+.container{
+    width: 100%;
+    margin: 1em;
+}
+#btn-group{
+    margin-top: 2px ;
+    width: 98%;
+    padding:2px;
+  }
+  #but{
+    width: 70%;
+    padding: 2px;
+  }
+li{
+    font-family: 'Montserrat', sans-serif;
+     font-weight: bolder;
+}
+#bold {
+    font-weight: bolder;
+}
+#lnk{
+    margin-left: 1em;
+  }
