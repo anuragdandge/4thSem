@@ -90,7 +90,7 @@
 );</code>
         </pre>
       </p>
-      <p >
+      <p>
         <b> Ex :-</b><pre style="margin-left:2em;">
           <code class="sql">CREATE TABLE persons (
     Person_Id  int ,
@@ -100,32 +100,80 @@
     City varchar2(225) ,
 );</code>
         </pre>
-      </p>
+      
       <h3>2) ALTER</h3><br/>
       <ul>
         <li>
-        <p>
+        
           ALTER Command will be used to modify the structure of the existing table using ALTER we can do following things .
-        </p>
+      
         </li>
-      </ul>
-      <li>
-          
-            Add new columns to the table .<br/>
+      <li>Add new columns to the table .<br/>
             <br/><b>Syntax :- </b>
             <pre>
               <code class="sql">ALTER TABLE student ADD ( Location varchar2(30));</code>
             </pre>
         </li>
-        <li>
-          
-            Removing existing column from table .<br/>
+        <li>Removing existing column from table .<br/>
             <br/><b>Syntax :- </b>
             <pre>
               <code class="sql">ALTER TABLE &lt;table_name&gt; DROP COLUMN column_name <br/>ALTER TABLE student DROP COLUMN course</code>
             </pre>
-          </p>
-        
+          </li>
+          <li>Modify columns data type size of the table <br/>
+            <br/><b>Example :-  </b>&nbsp;<pre><code class="sql">ALTER TABLE Student MODIFY (Name varchar2(20));</code></pre>
+          </li>
+          
+            <b style="color: red;"> <u> Change the name of the column of the table :-  </u></b><br/><br/>
+            <b>Syntax :- </b>
+            <pre>
+              <code class="sql">ALTER TABLE &lt;table_name&gt; RENAME COLUMN &lt;Old_name&gt; TO &lt;New_name&gt;</code></pre><b>Example :- </b>
+            <pre>
+              <code class="sql">ALTER TABLE student RENAME COLUMN Location TO Branch </code>
+            </pre>
+          
+        </p>
+      </ul>
+      <!-- Truncate -->
+      <h3>3) TRUNCATE </h3><br/>
+      <ul>
+        <li>
+        <p>
+        <b>TRUNCATE</b>  command used to remove the data from the table .
+        <br/><b>Syntax :- </b>
+            <pre><code class="sql">TRUNCATE TABLE &lt;table_name&gt;</code></pre><b> Ex :-</b><pre style="margin-left:2em;">
+                <code class="sql">TRUNCATE TABLE Student </code>
+              </pre>
+            </p>
+        </li>
+      </ul>
+      <!-- Drop -->
+      <h3>4) DROP  </h3><br/>
+      <ul>
+        <li> <b>DROP</b> Command used to remove table from the database . </li>
+        <li>
+        It removes entire table from the database along with data present in it .<br/>
+        <br/><b>Syntax :- </b> <br/><br/>
+           
+        <pre><code class="sql">DROP TABLE &lt;table_name&gt;</code></pre><b> Ex :-</b><pre style="margin-left:2em;">
+                <code class="sql">DROP TABLE Student </code>
+              </pre>
+            </p>
+        </li>
+      </ul>
+      <!-- RENAME -->
+      <h3>5) RENAME </h3><br/>
+      <ul>
+        <li> <b>RENAME</b> Command used to change the name of database objects like table , view etc. </li>
+        <li>
+        Using this command we can change only the name of database object not the columns of the table  .<br/>
+        <br/><b>Syntax :- </b> <br/><br/>
+           
+        <pre><code class="sql"> RENAME &lt;Old_name&gt; TO &lt;New_name&gt;</code></pre><b> Ex :-</b><pre style="margin-left:2em;">
+                <code class="sql">RENAME Student TO Student_data </code>
+              </pre>
+            </p>
+        </li>
       </ul>
     </div>
   </div>
