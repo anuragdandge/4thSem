@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Adv. Android </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+        body {
+            background-color: aquamarine;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            display: flexbox;
+
+        }
+
+        .content {
+            width: 100%;
+            background-color: rgb(50, 47, 88);
+            margin-left: 0px;
+            float: left;
+            color: white;
+            position: absolute;
+            word-spacing: 1px;
+        }
+
+        .head {
+            padding-left: 20px;
+            background-color: rgb(189, 35, 81);
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h5 {
+            float: right;
+            margin-right: 30px;
+            color: rgb(185, 159, 109);
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        td {
+            text-align: center;
+            color: white;
+        }
+
+        th {
+            text-align: center;
+            color: white;
+
+        }
+
+        .code {
+            background-color: rgb(189, 35, 81);
+            border: 2px groove rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        article {
+            color: rgb(255, 255, 255);
+        }
+
+        .method h4 {
+            padding-left: 5px;
+            font-size: 15px;
+            width: 30%;
+            background-color: white;
+            color: rgb(46, 89, 153);
+            margin-left: 1em;
+        }
+
+        .container {
+            width: 100%;
+            margin: 1em;
+        }
+
+        #btn-group {
+            margin-top: 2px;
+            width: 98%;
+            padding: 2px;
+        }
+
+        #but {
+            width: 70%;
+            padding: 2px;
+        }
+
+        li {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bolder;
+        }
+
+        #bold {
+            font-weight: bolder;
+        }
+
+        #lnk {
+            margin-left: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="brand">B.Sc IT 4th Sem </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" id="bold"> Notes </a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link" href="#" id="nav-link"> Practical </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tutorial
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" id="bold" href="php.html"> Php </a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+    </div>
+
+    <div class="main">
+
+        <div class="content">
+
+            <div class="container">
+                <div class="btn-group" id="btn-group">
+                    <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="android.html"
+                            style="text-decoration: none;float: left;">Adv. Android </a> </button>
+                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Practical <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#camera" id="bold"> Practical 1 </a></li>
+                        <!-- <li><a class="dropdown-item" href="#gps"  id="bold"> GPS </a></li>
+          <li><a class="dropdown-item" href="#accelerometer"  id="bold"> Accelerometer </a></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="camera" id="camera">
+                <h2 class="head"> Practical No. 1 </h2>
+                <h5>04/05/2021</h5>
+                <div class="container">
+                    <br />
+                    <p>
+                        <strong> activity_main.xml</strong><br />
+                    </p>
+
+                    <pre>
+            <code class="xml"><?xml version="1.0" encoding="utf-8"?>
+     &lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".MainActivity"&gt;
+                
+    &lt;Button
+         android:id="@+id/b1"
+         android:layout_width="130dp"
+         android:layout_height="53dp"
+         android:layout_marginStart="206dp"
+         android:layout_marginLeft="206dp"
+         android:layout_marginTop="316dp"
+         android:layout_marginEnd="117dp"
+         android:layout_marginRight="117dp"
+         android:layout_marginBottom="367dp"
+         android:text="Take_Picture"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="1.0"
+         android:onClick="Take_Picture"/&gt;
+    &lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;
+            </code>
+          </pre>
+                    <hr>
+
+                    <br />
+                    <p>
+                        <strong> MainActivity.java </strong><br />
+                    </p>
+
+                    <!-- Code Start -->
+                    <pre>
+  <code class="java">
+    package com.example.a4thsemproject1;
+
+    import androidx.appcompat.app.AppCompatActivity;
+    import android.content.ContentValues;
+    import android.content.Intent;
+    import android.net.Uri;
+    import android.os.Bundle;
+    import android.os.Environment;
+    import android.provider.MediaStore;
+    import android.view.View;
+    import android.widget.Button;
+    import android.widget.Toast;
+    
+    import java.io.File;
+    
+    public class MainActivity extends AppCompatActivity {
+           Button bu;
+           private  int IMAGE_CAPTURE_CODE = 1 ;
+           Uri imageUri;
+    
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            bu = findViewById(R.id.b1);
+            bu.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ContentValues values = new ContentValues();
+                    values.put(MediaStore.Images.Media.TITLE,"My Image");
+                    values.put(MediaStore.Images.Media.DESCRIPTION,"From the camera");
+    
+                    File f = new File(Environment.getExternalStorageDirectory(),"myphoto.jpg");
+                    imageUri = Uri.fromFile(f);
+                    imageUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,values);
+                    Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    
+                    i.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);
+                    startActivityForResult(i,IMAGE_CAPTURE_CODE);
+                }
+            });
+        }
+   
+        protected void onActivityResult(int request, int result , Intent data) {
+            super.onActivityResult(request, result, data);
+            if (request == IMAGE_CAPTURE_CODE && result == RESULT_OK) {
+                Toast.makeText(this, imageUri.toString(), Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+  </code>
+</pre>
+
+                    <!-- Code End -->
+                    <hr>
+                    <p>
+                        <strong> AndroidMenifest.xml </strong><br />
+                    </p>
+                    <pre>
+                        <code class="xml">    
+    &lt;?xml version="1.0" encoding="utf-8"?&gt;
+    &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.a4thsemproject1">
+    &lt;uses-feature android:name="android:hardware:camera"/&gt;
+            &lt;application
+                android:allowBackup="true"
+                android:icon="@mipmap/ic_launcher"
+                android:label="@string/app_name"
+                android:roundIcon="@mipmap/ic_launcher_round"
+                android:supportsRtl="true"
+                android:theme="@style/Theme.4thSemProject1"&gt;
+            &lt;activity android:name=".MainActivity"&gt;
+                &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN" /&gt;                            
+               
+                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
+                &lt;/intent-filter&gt;
+            &lt;/activity&gt;
+            &lt;/application&gt;                  
+    &lt;/manifest&gt;
+                       </code>
+                      </pre>
+
+                </div>
+
+            </div>
+            <hr>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
