@@ -250,9 +250,21 @@ ACCESS_COARSE_LOCATION<br/>
           &nbsp;&nbsp;&nbsp; Vertical upward or downward where positive represent upward moment such as device being lifted up .<br/><br/>
           &nbsp;&nbsp;&nbsp; longitudinal forward or backward acceleration were forward acceleration is positive , these represent a device flat on its background facing up and in orientation being moved along the desk in the direction of the top of the device . <br/><br/>
           &nbsp;&nbsp;&nbsp; Lateral Sideway acceleration where positive value represent moment forward the right of the device and negative value show moments forward the left in the same description aa describe in the longitudinal movement would be created by moving the device along surface to your right . 
-
         </p>
-
+           <h5>06/05/2021</h5><br /><br />
+         <p> &nbsp;&nbsp;&nbsp;The Sensor manager consider the device as rest when it is sitting face up on a flat surface
+          in portrait orientation , you can monitor the changes in acceleration user sensor listener register an
+          extension of the sensor listener class with the sensor manager using the <strong> SENSOR_ACCELEROMETER
+          </strong> flat to request update to accelerometer, values & a sensor update rate as shown in the following
+          code .
+        </p><br />
+          <pre>
+            <code class="java">SensorManager sm = (SensorManager)getSystemService(Contex.SENSOR_SERVICE);
+    sm.registerListener(mySensorListener,SensorManager.SENSOR_ACCELEROMETER,SensorManager.SENSOR_DELAY_UI);</code>
+          </pre>
+          <p>
+            &nbsp;&nbsp;&nbsp; Your Sensor Listener must implement the on sensor changes method that will be triggered when the changes in the Acceleration along any three axis are detected the onSensorChange() method receive a float array that contains the current acceleration along all three axis in raw formats . The sensor manager includes index constants that you can use to extracts the acceleration value you require as shown in the following code .     
+          </p>
       </div>
       </div>
     </div>
