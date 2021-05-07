@@ -265,6 +265,28 @@ ACCESS_COARSE_LOCATION<br/>
           <p>
             &nbsp;&nbsp;&nbsp; Your Sensor Listener must implement the on sensor changes method that will be triggered when the changes in the Acceleration along any three axis are detected the onSensorChange() method receive a float array that contains the current acceleration along all three axis in raw formats . The sensor manager includes index constants that you can use to extracts the acceleration value you require as shown in the following code .     
           </p>
+           <h5>07/05/2021</h5>
+          <br/><br/>
+          <pre>
+            <code class="java">SensorListener mySensorListener = new SensorListener()
+              {
+               Public void onSensorChanged( int Sensor,float[] values)
+               {
+                 If(Sensor==SensorManager.SENSOR_ACCELEROMETER){
+                   Float xAxis=values[SensorManager.DATA_X];
+                   Float yAxis=values[SensorManager.DATA_Y];
+                   Float zAxis=values[SensorManager.DATA_Z];
+        
+                   Float  raw_zAxis=values[SensorManager.RAW_DATA_X];
+                   Float  raw_yAxis=values[SensorManager.RAW_DATA_Y];
+                   Float  raw_zAxis=values[SensorManager.RAW_DATA_Z];
+                   }
+                }
+                  Public void onAccuracyChanged(int sensor , int accuracy)
+                 {}
+            };
+           </code>
+          </pre>
       </div>
       </div>
     </div>
