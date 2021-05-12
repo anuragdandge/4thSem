@@ -1,6 +1,6 @@
 {
-    "name":"Demo",
-    "short_name":"demo",
+    "name":"Notes ",
+    "short_name":"4th Sem Notes ",
     "start_url":"/?home=true",
     "icons":[ {
         "src": "icons/manifest-icon-192.png",
