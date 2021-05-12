@@ -1,7 +1,7 @@
 {
     "name":"Notes ",
     "short_name":"4th Sem Notes ",
-    "start_url":"/index.html",
+    "start_url":"https://anuragdandge.github.io/4thSem/",
     "icons":[ {
         "src": "icons/manifest-icon-192.png",
         "sizes": "192x192",
