@@ -378,6 +378,125 @@
       </div>
     </div>
     <!-- Examples End of date 06/05/2021 -->
+  <!-- Start of day 08/05/2021 -->
+    <hr>
+    <h5>08/05/2021</h5><br />
+    <div class="container">
+
+      <strong><em> Aim: - </em></strong> To study the DML Commands. <br />
+      &nbsp;&nbsp;&nbsp; Resources used Oracle 10g or SQL Server 2005 .
+      <br /><br /><strong> <em> Theory: - </em></strong>
+      <p>
+      <ul>
+        <li>
+          DML Commands are used to modify the data presented in the table.
+        </li>
+        <li>
+          These statement work on the data.
+        </li>
+        <li>
+          DML requires transaction control, any changes which is made to the database by DML statement will be called as
+          transaction.
+        </li>
+        <li>
+          Any changes made by DML statement controlled by TCL statement .
+        </li>
+        <li>
+          DML Support following Categories of Commands ,
+          <ol>
+            <li>INSERT</li>
+            <li>DELETE</li>
+            <li>UPDATE</li>
+          </ol>
+        </li>
+      </ul>
+      </p>
+      <strong><em> 1) INSERT: -</em></strong>
+      <p>
+      <ul style="list-style-type:square">
+        <li> <u>INSERT</u> command will be used to insert new data into table . </li>
+        <li> In other words it will be used to create new rows in table .</li>
+        <li> While using this command the values are separated by commas & the values of data type varcahar , char ,
+          long are enclosed in single quotes. </li>
+        <li> We have 2 different syntax for writing Insert. </li>
+      </ul>
+      <strong><em>Syntax: -</em></strong>
+      <p>
+      <pre><code class="sql"> INSERT INTO &lt;table_name&gt; VALUES (a_list_of_values)</code></pre>
+      </p>
+      <strong><em>Example: -</em></strong><br /><br />
+      <pre><code class="sql">INSERT INTO dept VALUES (50,'IT','Pune');</code></pre>
+      <p> &nbsp;&nbsp; If data has to be written into only specific column this too is possible with slight variations
+        to the general
+        syntax.
+      </p>
+      </p>
+    </div>
+    <!-- End of day 08/05/2021 -->
+    <hr>
+    <!-- Start of day 10/05/2021 -->
+    <h5>10/05/2021</h5><br />
+    <div class="container">
+      <p>
+        <strong><em>Syntax:- </em></strong>
+      <pre><code class="sql">INSERT INTO &lt;table_name(column_name)&gt; VALUES (a_list_of_values);</code></pre>
+      <strong><em>Syntax:- </em></strong><br /><br />
+      <pre><code class="sql">INSERT INTO emp(empno,ename,job,sal,hiredate) 
+VALUES (101,'Vivek','Professor','40000',sysdate);</code></pre>
+      </p>
+      <hr>
+      <strong><em> 2) UPDATE: - </em></strong>
+      <p>
+      <ul>
+        <li><strong><u>UPDATE</u></strong> command will be used to modify the data present in tables .</li>
+        <li> The update command consist of a <strong><em>' set '</em></strong> clause and an optional <strong><em>'
+              where '</em></strong> clause to reflect changes in existing data <strong> <em> UPDATE </em></strong>
+          command is used .</li>
+      </ul>
+      </p>
+      <strong><em>Syntax: -</em></strong><br /><br />
+      <pre><code class="sql">UPDATE &lt;table_name&gt; SET field1=value,field2=value WHERE condition;</code></pre>
+      <strong><em>Example: -</em></strong><br /><br />
+      <pre><code class="sql">UPDATE dept SET dname='ACCOUNT' WHERE deptno=50 ;</code></pre>
+      <p><br />
+      <div style="background-color: red;border-radius: 10px;">
+        <p style="font-weight: bolder;padding: 10px;">
+          Note:- If the <strong><em>" WHERE "</em></strong> condition is committed , the entire table is committed.
+        </p>
+      </div><br />
+      <p>
+        <strong><em> Eg.</em></strong><br />
+      <pre><code class="sql"> UPDATE emp SET job='DBA', sal=40000 WHERE empno=101; </code></pre>
+
+      <strong><em> Eg.</em></strong><br /><br />
+      <pre><code class="sql"> UPDATE emp SET sal=(SELECT sal FROM emp WHERE empno=101) WHERE empno=7902; </code></pre>
+      </p>
+      </p><br />
+      <hr>
+      <br />
+      <strong><em> 3) DELETE: -</em></strong>
+      <p>
+      <ul style="list-style-type: square;">
+        <li><strong><em><u> DELETE </u></em></strong> command will be used to remove data from table. </li>
+        <li> Using DELETE we can remove single row or rows from table. </li>
+        <li> The DELETE command consist the optional. <strong><em>' where '</em></strong> clause.</li>
+        <li> Two way we can delete the data. </li>
+      </ul>
+      <strong><em> Syntax: -</em></strong><br />
+      <br />
+      <pre><code class="sql">DELETE from &lt;table_name&gt; WHERE &lt;condition&gt; </code></pre>
+      </p>
+      <p>
+        <u> First Way: - </u><br />
+        Eg.
+      <pre style="margin-left: 1em;"><code class="sql">DELETE FROM emp;</code></pre>
+      </p>
+      <p><u> Second Way: - </u><br />
+      <pre style="margin-left: 1em;"><code class="sql">DELETE FROM emp WHERE job='DBA';</code></pre>
+
+      </p>
+    </div>
+    <!-- End of day 10/05/2021 -->
   </div>
 
   <!-- Optional JavaScript; choose one of the two! -->
