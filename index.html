@@ -13,33 +13,38 @@
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <script>
-    if('serviceWorker' in navigator){
-        navigator.serviceWorker.register('/service-worker.js');
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
     }
-</script>
-  <title> Home  </title>
+  </script>
+  <title> Home </title>
   <style>
-    body{
-    min-height:100vh;
+    body {
+      min-height: 100vh;
     }
-#btn-group{
-  margin: 2px;
-  width: 100%;
-  padding:2px;
-}
-#but{
-  width: 70%;
-  padding: 2px;
-}
-#lnk{
-  margin-left: 1em;
-}
-#txt{
-  margin-top: .2em;
- float: left;
-margin-left: 1em;
-}
-/*       #lnk{
+
+    #btn-group {
+      margin: 2px;
+      width: 100%;
+      padding: 2px;
+    }
+
+    #but {
+      width: 70%;
+      padding: 2px;
+    }
+
+    #lnk {
+      margin-left: 1em;
+    }
+
+    #txt {
+      margin-top: .2em;
+      float: left;
+      margin-left: 1em;
+    }
+
+    /*       #lnk{
       color: white;
       background-color: rgba(255, 255, 255, 0);
       padding-top: 1em;
@@ -53,8 +58,8 @@ margin-left: 1em;
       transition: all .2s;
     }
  */
- .sticky-footer {
-      top:100%; 
+    .sticky-footer {
+      top: 100%;
     }
   </style>
 </head>
@@ -76,18 +81,20 @@ margin-left: 1em;
             <a class="nav-link active" aria-current="page" href="#"> Notes </a>
           </li>
           <li class="nav-item" id="nav-item">
-            <a class="nav-link" href="https://anuragdandge.github.io/4thSem/practical.html" id="nav-link"> Practical </a>
+            <a class="nav-link" href="https://anuragdandge.github.io/4thSem/practical.html" id="nav-link"> Practical
+            </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Tutorial 
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Tutorial
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="php.html"> Php </a></li>
               <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-            </ul> 
+            </ul>
           </li>
 
         </ul>
@@ -97,86 +104,108 @@ margin-left: 1em;
   <!-- Navigation Bar End -->
 
   <div class="main">
-    
-    
-     
+
+
+
     <div class="container">
-     
-     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Hey there! </strong> Practicals of  <a href="https://anuragdandge.github.io/4thSem/adbmspractical.html"> ADBMS </a> are added check it 🤘 in Practical Section 
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-<!-- Example split danger button -->
-<div class="btn-group" id="btn-group">
-  <button type="button" class="btn btn-light" id="but">
-    <a id="lnk" href="aplr.html" style="text-decoration: none;float: left;">APLR </a>  </button>
-  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-   Chapter <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#NumberSystem"> Number System</a></li>
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#Numbers"> Numbers </a></li>
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#facevalue"> Face Value & Place Value </a></li>
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#testOfDivisibility"> Test of Divisibility</a></li>
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#rules"> Rules </a></li>
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#formulae"> Formulae  </a></li>
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Hey there! </strong> Practicals of <a href="https://anuragdandge.github.io/4thSem/adbmspractical.html">
+          ADBMS </a> are added check it 🤘 in Practical Section
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <!-- Example split danger button -->
+      <div class="btn-group" id="btn-group">
+        <button type="button" class="btn btn-light" id="but">
+          <a id="lnk" href="aplr.html" style="text-decoration: none;float: left;">APLR </a> </button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Chapter <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#NumberSystem"> Number
+              System</a></li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#Numbers"> Numbers </a></li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#facevalue"> Face Value &
+              Place Value </a></li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#testOfDivisibility"> Test
+              of Divisibility</a></li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#rules"> Rules </a></li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/aplr.html#formulae"> Formulae </a>
+          </li>
 
 
-  </ul>
-</div>
-<div class="btn-group" id="btn-group">
-  <button type="button" class="btn btn-light" id="but"> <a  id="lnk" href="android.html" style="text-decoration: none;float: left;">Adv. Android </a>  </button>
-  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-   Chapter <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/android.html#camera"> Camera </a></li>
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/android.html#gps"> GPS </a></li>
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/android.html#accelerometer"> Accelerometer </a></li>
-    <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
-  </ul>
-</div>
-<div class="btn-group" id="btn-group">
-  <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="adbms.html" style="text-decoration: none;float: left;"> ADBMS </a>  </button>
-  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-   Chapter <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/adbms.html#sqlfunction">SQL Function </a></li>
+        </ul>
+      </div>
+      <div class="btn-group" id="btn-group">
+        <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="android.html"
+            style="text-decoration: none;float: left;">Adv. Android </a> </button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Chapter <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/android.html#camera"> Camera </a>
+          </li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/android.html#gps"> GPS </a></li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/android.html#accelerometer">
+              Accelerometer </a></li>
+          <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+        </ul>
+      </div>
+      <div class="btn-group" id="btn-group">
+        <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="adbms.html"
+            style="text-decoration: none;float: left;"> ADBMS </a> </button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Chapter <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
 
-    <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/adbms.html#methods"> Methods </a></li>
-    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/adbms.html#sqlfunction">SQL Function
+            </a></li>
+
+          <li><a class="dropdown-item" href="https://anuragdandge.github.io/4thSem/adbms.html#methods"> Methods </a>
+          </li>
+          <!-- <li><a class="dropdown-item" href="#">Something else here</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="#">Separated link</a></li> -->
-  </ul>
-</div>
-<div class="btn-group" id="btn-group">
-  <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="spm.html" style="text-decoration: none;float: left;"> SPM  </a>  </button>
-  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-   Chapter <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
- <div class="btn-group" id="btn-group">
-  <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="ittools3.html" style="text-decoration: none; float: left;"> IT Tools - III </a>  </button>
-  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-   Chapter <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
+        </ul>
+      </div>
+      <div class="btn-group" id="btn-group">
+        <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="spm.html"
+            style="text-decoration: none;float: left;"> SPM </a> </button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Chapter <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group" id="btn-group">
+        <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="ittools3.html"
+            style="text-decoration: none; float: left;"> IT Tools - III </a> </button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Chapter <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
 
       <div class="btn-group" id="btn-group">
         <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="java.html"
@@ -197,10 +226,10 @@ margin-left: 1em;
       </div>
     </div>
   </div>
-  
+
   <footer class="sticky-footer position-sticky abso" style="background-color: white;">
-        <p class="navbar-text txt" style="padding-left: 1em;"> © All Rights Reserved 2021</p>
-  </footer> 
+    <p class="navbar-text txt" style="padding-left: 1em;"> © All Rights Reserved 2021</p>
+  </footer>
   <!-- <footer class="footer mt-auto py-3 bg-light abso">
   </footer> -->
   <!-- Optional JavaScript; choose one of the two! -->
