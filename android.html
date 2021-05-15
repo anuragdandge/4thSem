@@ -26,7 +26,7 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav" id="navbar-nav">
             <li class="nav-item">
@@ -36,36 +36,37 @@
               <a class="nav-link" href="practical.html" id="nav-link"> Practical </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tutorial 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tutorial
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" id="bold" href="php.html"> Php </a></li>
                 <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-              </ul> 
+              </ul>
             </li>
-  
+
           </ul>
         </div>
       </div>
 
-      
-      
+
+
   </div>
 
   <div class="main">
-       
+
 
     <div class="content">
-           <!-- Scroll to Top button -->
+      <!-- Scroll to Top button -->
       <style>
         .scroll {
           color: #fff;
           margin-top: 10px
         }
-  
+
         #toTopBtn {
           position: fixed;
           bottom: 26px;
@@ -74,22 +75,22 @@
           padding: 21px;
           background-color: hsla(5, 76%, 62%, .8)
         }
-  
+
         .js .cd-top--fade-out {
           opacity: .5
         }
-  
+
         .js .cd-top--is-visible {
           visibility: visible;
           opacity: 1
         }
-  
+
         .js .cd-top {
           visibility: hidden;
           opacity: 0;
           transition: opacity .3s, visibility .3s, background-color .3s
         }
-  
+
         .cd-top {
           position: fixed;
           bottom: 20px;
@@ -107,7 +108,7 @@
           background-color: rgba(232, 84, 212, 0.8);
           /* background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8) */
         }
-  
+
         .height {
           height: 0px
         }
@@ -127,34 +128,37 @@
               $('#toTopBtn').fadeOut();
             }
           });
-  
+
           $('#toTopBtn').click(function () {
             $("html, body").animate({
               scrollTop: 0
-            },1);
+            }, 1);
             return false;
           });
         });
       </script>
       <!-- End of Scroll to Top Button  -->
 
-     <div class="container">
-      <div class="btn-group" id="btn-group">
-        <button type="button" class="btn btn-light" id="but"> <a  id="lnk" href="android.html" style="text-decoration: none;float: left;">Adv. Android </a>  </button>
-        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-         Chapter <span class="visually-hidden">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#camera"  id="bold" > Camera </a></li>
-          <li><a class="dropdown-item" href="#gps"  id="bold"> GPS </a></li>
-          <li><a class="dropdown-item" href="#accelerometer"  id="bold"> Accelerometer </a></li>
-          <!-- <li><a class="dropdown-item" href="#">Separated link</a></li> -->
-        </ul>
-      </div>
-     </div>
+      <div class="container">
+        <div class="btn-group" id="btn-group">
+          <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="android.html"
+              style="text-decoration: none;float: left;">Adv. Android </a> </button>
+          <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Chapter <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#camera" id="bold"> Camera </a></li>
+            <li><a class="dropdown-item" href="#gps" id="bold"> GPS </a></li>
+            <li><a class="dropdown-item" href="#accelerometer" id="bold"> Accelerometer </a></li>
+            <li><a class="dropdown-item" href="#nativegmap" id="bold"> Native G-maps </a></li>
 
-      
-      <div class="camera" id="camera" >
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="camera" id="camera">
         <h2 class="head"> 1 ) Camera </h2>
         <h5>23/04/2021</h5>
         <div class="container">
@@ -313,40 +317,53 @@ ACCESS_COARSE_LOCATION<br/>
       <div class="accelerometer" id="accelerometer">
         <h2 class="head"> 3) Accelerometer</h2>
         <h5>30/04/2021</h5><br />
-      <br/>
+        <br />
         <div class="container">
-        <p>  &nbsp;<b># Introduction Accelerometer :- </b><br/>
-         &nbsp;&nbsp;&nbsp; Accelerometer as there name suggest are use to measure acceleration , acceleration is define as rate of change
-          of velocity so they measure how quickly the speed of the device is changing in a given direction using an
-          Accelerometer you can detect movement and more use of the rate of the change of the speed of that moment
-          generally you will be intrested in acceleration changes relative to a rapid movement such as use for user
-          input in the formal case you will often need to the device to calculate the initial orientation and
-          acceleration to take effects ito in future result .
-        </p>
-        
-        <p>
-          &nbsp;<b># Detecting Acceleration Changes :- </b><br/>
-          &nbsp;&nbsp;&nbsp;  Acceleration can be measured along there directional Axis forward , backward , left , right and up-down the sensor manager report sensor changes in all three direction (in the three axis).<br/><br/>
-          &nbsp;&nbsp;&nbsp; Vertical upward or downward where positive represent upward moment such as device being lifted up .<br/><br/>
-          &nbsp;&nbsp;&nbsp; longitudinal forward or backward acceleration were forward acceleration is positive , these represent a device flat on its background facing up and in orientation being moved along the desk in the direction of the top of the device . <br/><br/>
-          &nbsp;&nbsp;&nbsp; Lateral Sideway acceleration where positive value represent moment forward the right of the device and negative value show moments forward the left in the same description aa describe in the longitudinal movement would be created by moving the device along surface to your right . 
-        </p>
-           <h5>06/05/2021</h5><br /><br />
-         <p> &nbsp;&nbsp;&nbsp;The Sensor manager consider the device as rest when it is sitting face up on a flat surface
-          in portrait orientation , you can monitor the changes in acceleration user sensor listener register an
-          extension of the sensor listener class with the sensor manager using the <strong> SENSOR_ACCELEROMETER
-          </strong> flat to request update to accelerometer, values & a sensor update rate as shown in the following
-          code .
-        </p><br />
+          <p> &nbsp;<b># Introduction Accelerometer :- </b><br />
+            &nbsp;&nbsp;&nbsp; Accelerometer as there name suggest are use to measure acceleration , acceleration is
+            define as rate of change
+            of velocity so they measure how quickly the speed of the device is changing in a given direction using an
+            Accelerometer you can detect movement and more use of the rate of the change of the speed of that moment
+            generally you will be intrested in acceleration changes relative to a rapid movement such as use for user
+            input in the formal case you will often need to the device to calculate the initial orientation and
+            acceleration to take effects ito in future result .
+          </p>
+
+          <p>
+            &nbsp;<b># Detecting Acceleration Changes :- </b><br />
+            &nbsp;&nbsp;&nbsp; Acceleration can be measured along there directional Axis forward , backward , left ,
+            right and up-down the sensor manager report sensor changes in all three direction (in the three
+            axis).<br /><br />
+            &nbsp;&nbsp;&nbsp; Vertical upward or downward where positive represent upward moment such as device being
+            lifted up .<br /><br />
+            &nbsp;&nbsp;&nbsp; longitudinal forward or backward acceleration were forward acceleration is positive ,
+            these represent a device flat on its background facing up and in orientation being moved along the desk in
+            the direction of the top of the device . <br /><br />
+            &nbsp;&nbsp;&nbsp; Lateral Sideway acceleration where positive value represent moment forward the right of
+            the device and negative value show moments forward the left in the same description aa describe in the
+            longitudinal movement would be created by moving the device along surface to your right .
+          </p>
+          <h5>06/05/2021</h5><br /><br />
+          <p> &nbsp;&nbsp;&nbsp;The Sensor manager consider the device as rest when it is sitting face up on a flat
+            surface
+            in portrait orientation , you can monitor the changes in acceleration user sensor listener register an
+            extension of the sensor listener class with the sensor manager using the <strong> SENSOR_ACCELEROMETER
+            </strong> flat to request update to accelerometer, values & a sensor update rate as shown in the following
+            code .
+          </p><br />
           <pre>
             <code class="java">SensorManager sm = (SensorManager)getSystemService(Contex.SENSOR_SERVICE);
     sm.registerListener(mySensorListener,SensorManager.SENSOR_ACCELEROMETER,SensorManager.SENSOR_DELAY_UI);</code>
           </pre>
           <p>
-            &nbsp;&nbsp;&nbsp; Your Sensor Listener must implement the on sensor changes method that will be triggered when the changes in the Acceleration along any three axis are detected the onSensorChange() method receive a float array that contains the current acceleration along all three axis in raw formats . The sensor manager includes index constants that you can use to extracts the acceleration value you require as shown in the following code .     
+            &nbsp;&nbsp;&nbsp; Your Sensor Listener must implement the on sensor changes method that will be triggered
+            when the changes in the Acceleration along any three axis are detected the onSensorChange() method receive a
+            float array that contains the current acceleration along all three axis in raw formats . The sensor manager
+            includes index constants that you can use to extracts the acceleration value you require as shown in the
+            following code .
           </p>
-           <h5>07/05/2021</h5>
-          <br/><br/>
+          <h5>07/05/2021</h5>
+          <br /><br />
           <pre>
             <code class="java">SensorListener mySensorListener = new SensorListener()
               {
@@ -367,25 +384,63 @@ ACCESS_COARSE_LOCATION<br/>
             };
            </code>
           </pre>
+        </div>
       </div>
-      </div>
-     <hr>
+      <hr>
       <h5>08/05/2021</h5><br />
-      <div class="container">
-        <p>
-          &nbsp;<strong># Native Google Maps & location based services : - </strong>
-          <br /><br />&nbsp;&nbsp; Native maps support lets you create a range of map based application that mobility of
-          android device lets you create activities that include interactive google maps as shown as a part of your
-          interface with all access to map that you can control programatically & using android rich graphic
-          library.<br /><br/>
-          &nbsp;&nbsp; Android location based services manage technology like gps & googleGSM call based location
-          technology to determine the device's current position these service enforce an abstraction from specific
-          location detecting technology & lets you specify minimum requirements rather than choosing a particular
-          technology , it also means that your location based application will work, no matter what technology the host
-          handset supports.<br /><br/>
-          &nbsp;&nbsp; To combine maps with location android includes an API for forward & reverse geocoding that lets you find map co-ordinates for an address & the address of map position.   
-        </p>
+      <div class="nativegmap" id="nativegmap">
+        <div class="container">
+          <p>
+            &nbsp;<strong># Native Google Maps & location based services : - </strong>
+            <br /><br />&nbsp;&nbsp; Native maps support lets you create a range of map based application that mobility
+            of
+            android device lets you create activities that include interactive google maps as shown as a part of your
+            interface with all access to map that you can control programatically & using android rich graphic
+            library.<br /><br />
+            &nbsp;&nbsp; Android location based services manage technology like gps & googleGSM call based location
+            technology to determine the device's current position these service enforce an abstraction from specific
+            location detecting technology & lets you specify minimum requirements rather than choosing a particular
+            technology , it also means that your location based application will work, no matter what technology the
+            host
+            handset supports.<br /><br />
+            &nbsp;&nbsp; To combine maps with location android includes an API for forward & reverse geocoding that lets
+            you find map co-ordinates for an address & the address of map position.
+          </p>
+        </div>
       </div>
+      <hr>
+      <div class="bgservice" id="bgservice">
+        <h5>15/05/2021</h5><br />
+        <div class="container">
+          <p>
+            &nbsp;<strong># Background Services: - </strong>
+            <br /><br />&nbsp;&nbsp; Android supports application & service design to run invisibly in background .
+            Modern mobile are by nature multifunction devices, however their screen size is limited means that
+            generally only one interactive application can be visible at any time, platform that don't support
+            background execution limit the visibility of application that don't need your constant attention.
+            <br /><br />
+            &nbsp;&nbsp; Background service make it possible to create invisible application components that perform
+            automatic processing without direct user action. Background execution allows your application to become
+            event driven & to support regular updates which is perfect for maintaining game score or market price
+            generating location based alerts & pre-screening incoming calls & SMS messages.<br /><br />
+            &nbsp;&nbsp; Notification are the standard means by which a mobile device traditionally alerts users to
+            event that have happened in a background application using the notification manager you can trigger audible
+            alerts cause vibration & flash the device's LED as well as control status bar notification icon.
+          </p>
+          <p>
+            &nbsp;<strong># SQLite Database for data storage & retrieval: - </strong>
+            <br /><br />&nbsp;&nbsp; Rapid & efficient data storage & retrieval are essential for a device whose storage
+            capacity is relatively limited.<br /><br />
+            &nbsp;&nbsp; Android provides a lightweight relational database for each application via SQLite your
+            application can take advantage of this manage relational database engine to store data security &
+            efficiency.<br /><br />
+            &nbsp;&nbsp; By default each application database is it's available only to the application that created it
+            but contain provider supply a mechanism for the manage sharing of these application database as well as
+            providing an abstraction between your application & data sources.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
   </div>
