@@ -4,9 +4,7 @@ html{
     scroll-behavior: smooth;
     
 }
-body{
-    background-color: rgb(63, 38, 109);
-}
+
 .main{
     display:flexbox;
     margin-left: 0px;
@@ -15,7 +13,7 @@ body{
 
 .content{
     width: 100%;
-    background-color: rgb(50, 47, 88);
+    background-color: rgb(98, 133, 161);
     margin-left: 0px;
     margin-right: 0px;
     float:left ;
