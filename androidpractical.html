@@ -401,7 +401,9 @@
                         <li> B)<a href="#con"> Context Menu</a> (15/05/2021)</li>
                     </ul>
                     <b id="opt"><em> A) Option Menu: - </em></b><br />
-                    <h5 style="background-color: #fff;padding: 5px;color: red;border-radius: 6px 0px 6px 0px ;border: 2px solid black; box-shadow: 2px 2px 10px rgb(255, 255, 255);">08/05/2021</h5>
+                    <h5
+                        style="background-color: #fff;padding: 5px;color: red;border-radius: 6px 0px 6px 0px ;border: 2px solid black; box-shadow: 2px 2px 10px rgb(255, 255, 255);">
+                        08/05/2021</h5>
                     <div class="container">
 
                         <p>
@@ -457,12 +459,29 @@ import androidx.appcompat.app.AppCompatActivity;
   &lt;/menu&gt;</code></pre>
 
                     </div>
+                    <style>
+                        .imgs {
+                            display: flex;
+                            flex-direction: row;
+                        }
+                    </style>
+                                        <strong><em><u> Output: -</u></em></strong>
+
+                    <div class="container">
+                        <div class="imgs">
+                            <img class="img card img-fluid m-2" src="Images/and_ass_2(1).jpg" width="50%" alt="">
+                            <img class="img card img-fluid m-2" src="Images/and_ass_2(2).jpg" width="50%" alt="">
+
+                        </div>
+                    </div>
                     <hr>
                     <strong id="con"><em> B) Context Menu: -</em></strong>
-                    <h5 style="background-color: #fff;padding: 5px;color: red;border-radius: 6px 0px 6px 0px ;border: 2px solid black; box-shadow: 2px 2px 10px rgb(255, 255, 255);">15/05/2021</h5>
+                    <h5
+                        style="background-color: #fff;padding: 5px;color: red;border-radius: 6px 0px 6px 0px ;border: 2px solid black; box-shadow: 2px 2px 10px rgb(255, 255, 255);">
+                        15/05/2021</h5>
                     <div class="container">
-                      <p><strong>activity_main.xml</strong></p>
-<pre style="border-radius: 10px;"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+                        <p><strong>activity_main.xml</strong></p>
+                        <pre style="border-radius: 10px;"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -481,9 +500,9 @@ import androidx.appcompat.app.AppCompatActivity;
         app:layout_constraintTop_toTopOf="parent" /&gt;
 &lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;
 
-</code></pre>   
-<p><strong>MainActivity.java</strong></p>  
-<pre style="border-radius: 10px;"><code class="java">
+</code></pre>
+                        <p><strong>MainActivity.java</strong></p>
+                        <pre style="border-radius: 10px;"><code class="java">
 package com.example.contextmenu;  
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -531,9 +550,9 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 }    
-</code></pre>  
-<p><strong>menu.xml</strong></p>
-<pre style="border-radius: 10px;"><code class="xml">
+</code></pre>
+                        <p><strong>menu.xml</strong></p>
+                        <pre style="border-radius: 10px;"><code class="xml">
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;menu xmlns:android="http://schemas.android.com/apk/res/android"&gt;
     &lt;item android:id="@+id/call"
@@ -541,9 +560,14 @@ public class MainActivity extends AppCompatActivity {
     &lt;item android:id="@+id/edit"
         android:title="Edit"/&gt;
 &lt;/menu&gt;    
-</code></pre>               
+</code></pre>
                     </div>
-
+                    <strong><em><u> Output: -</u></em></strong>
+                    <div class="container">
+                        <div class="imgs">
+                            <img class="img card img-fluid m-2" src="Images/and_ass2_B(1).jpg" width="100%" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
 
