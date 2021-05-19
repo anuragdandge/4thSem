@@ -164,7 +164,7 @@
                     color: #fff;
                     margin-top: 10px
                 }
-    
+
                 #toTopBtn {
                     position: fixed;
                     bottom: 26px;
@@ -173,22 +173,22 @@
                     padding: 21px;
                     background-color: hsla(5, 76%, 62%, .8)
                 }
-    
+
                 .js .cd-top--fade-out {
                     opacity: .5
                 }
-    
+
                 .js .cd-top--is-visible {
                     visibility: visible;
                     opacity: 1
                 }
-    
+
                 .js .cd-top {
                     visibility: hidden;
                     opacity: 0;
                     transition: opacity .3s, visibility .3s, background-color .3s
                 }
-    
+
                 .cd-top {
                     position: fixed;
                     bottom: 20px;
@@ -206,7 +206,7 @@
                     background-color: rgba(232, 84, 212, 0.8);
                     /* background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8) */
                 }
-    
+
                 .height {
                     height: 0px
                 }
@@ -226,7 +226,7 @@
                             $('#toTopBtn').fadeOut();
                         }
                     });
-    
+
                     $('#toTopBtn').click(function () {
                         $("html, body").animate({
                             scrollTop: 0
@@ -245,10 +245,8 @@
                         Practical <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#practical1" id="bold"> Practical 1 </a></li>
-                        <!-- <li><a class="dropdown-item" href="#gps"  id="bold"> GPS </a></li>
-          <li><a class="dropdown-item" href="#accelerometer"  id="bold"> Accelerometer </a></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                        <li><a class="dropdown-item" href="#practical1" id="bold"> Assignment 1 </a></li>
+                        <li><a class="dropdown-item" href="#practical2" id="bold"> Assignment 2</a></li>
                     </ul>
                 </div>
             </div>
@@ -258,16 +256,17 @@
                 <h2 class="head"> Practical No. 1 </h2>
                 <h5>27/04/2021</h5>
                 <div class="container">
-                    <br /> <strong><em> Aim: - </em></strong> Write a Program to demonstrate device's built-in Camera .
+                    <br /> <strong><em> <u> Aim: - </u></em></strong> Write a Program to demonstrate device's built-in
+                    Camera .
                     <br /> <br />
                     <strong><em> <u> Theory: - </u></em></strong>
-                    <br /><br/>
+                    <br /><br />
                     <p>
-                      &nbsp; &nbsp;  <strong> activity_main.xml</strong><br />
+                        &nbsp; &nbsp; <strong> activity_main.xml</strong><br />
                     </p>
 
-                    <pre>
-            <code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+                    <pre style="border-radius:10px;">
+            <code class="xml" style="border-radius: 10px;">&lt;?xml version="1.0" encoding="utf-8"?&gt;
      &lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
      xmlns:app="http://schemas.android.com/apk/res-auto"
      xmlns:tools="http://schemas.android.com/tools"
@@ -304,8 +303,8 @@
                     </p>
 
                     <!-- Code Start -->
-                    <pre>
-  <code class="java">
+                    <pre style="border-radius: 10px;">
+  <code style="border-radius: 10px;" class="java">
     package com.example.a4thsemproject1;
 
     import androidx.appcompat.app.AppCompatActivity;
@@ -364,8 +363,8 @@
                     <p>
                         <strong> AndroidManifest.xml </strong><br />
                     </p>
-                    <pre>
-                        <code class="xml">    
+                    <pre style="border-radius: 10px;">
+                        <code style="border-radius: 10px;" class="xml">    
     &lt;?xml version="1.0" encoding="utf-8"?&gt;
     &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.example.a4thsemproject1">
@@ -393,6 +392,160 @@
 
             </div>
             <hr>
+            <div class="menu" id="practical2">
+                <h2 class="head"> Assignment 2 </h2>
+                <div class="container">
+                    <strong><em><u> Aim : -</u></em></strong> Write a program to demonstrate Menu.<br /><br />
+                    <ul>
+                        <li> A)<a href="#opt"> Option Menu</a> (08/05/2021)</li>
+                        <li> B)<a href="#con"> Context Menu</a> (15/05/2021)</li>
+                    </ul>
+                    <b id="opt"><em> A) Option Menu: - </em></b><br />
+                    <h5 style="background-color: #fff;padding: 5px;color: red;border-radius: 6px 0px 6px 0px ;border: 2px solid black; box-shadow: 2px 2px 10px rgb(255, 255, 255);">08/05/2021</h5>
+                    <div class="container">
+
+                        <p>
+                            &nbsp;&nbsp; <strong>activity_main.xml</strong>
+                        </p>
+                        <pre style="border-radius: 7px;"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+    &lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"/&gt;</code></pre>
+                        <p>
+                            <strong> &nbsp;&nbsp; MainActivity.java</strong>
+                        </p>
+                        <pre style="border-radius: 7px;"><code class="java">
+package com.example.menu;
+
+import androidx.appcompat.app.AppCompatActivity;
+        
+    import android.content.Intent;
+    import android.content.ServiceConnection;
+    import android.os.Bundle;
+    import android.view.Menu;
+    import android.view.MenuInflater;
+    import android.view.MenuItem;
+        
+      public class MainActivity extends AppCompatActivity {
+        
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.activity_main);
+        }
+        
+      public boolean onCreateOptionsMenu(Menu menu) {
+        
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu,menu);
+        return true;
+      }
+     
+    }        
+    </code></pre>
+                        <p><strong> &nbsp;&nbsp; menu.xml</strong></p>
+                        <pre style="border-radius: 7px;"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+ &lt;menu xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+        
+  &lt;item android:id="@+id/Home"
+        android:title="Home"/&gt;
+  &lt;item android:id="@+id/Contact"
+        android:title="Contact"/&gt;
+  &lt;/menu&gt;</code></pre>
+
+                    </div>
+                    <hr>
+                    <strong id="con"><em> B) Context Menu: -</em></strong>
+                    <h5 style="background-color: #fff;padding: 5px;color: red;border-radius: 6px 0px 6px 0px ;border: 2px solid black; box-shadow: 2px 2px 10px rgb(255, 255, 255);">15/05/2021</h5>
+                    <div class="container">
+                      <p><strong>activity_main.xml</strong></p>
+<pre style="border-radius: 10px;"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"&gt;
+
+    &lt;ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /&gt;
+&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;
+
+</code></pre>   
+<p><strong>MainActivity.java</strong></p>  
+<pre style="border-radius: 10px;"><code class="java">
+package com.example.contextmenu;  
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.*;
+import android.view.*;
+
+public class MainActivity extends AppCompatActivity {
+
+    ListView l;
+    String contacts[]={"My Number","Omkar","Jay","Abhay","Yashodip"};
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        l = (ListView)findViewById(R.id.ListView);
+        ArrayAdapter<String>adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,contacts);
+        l.setAdapter(adapter);
+        registerForContextMenu(l);
+    }
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo info)
+    {
+        super.onCreateContextMenu(menu, v, info);
+        MenuInflater i =  getMenuInflater();
+        i.inflate(R.menu.menu,menu);
+        menu.setHeaderTitle("Select the Action");
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.call)
+        {
+            Toast.makeText(getApplicationContext(),"Calling",Toast.LENGTH_LONG).show();
+        }
+        else if(item.getItemId()==R.id.edit)
+        {
+            Toast.makeText(getApplicationContext(),"Edit the Context",Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            return false;
+        }
+        return true;
+    }
+}    
+</code></pre>  
+<p><strong>menu.xml</strong></p>
+<pre style="border-radius: 10px;"><code class="xml">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;menu xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;item android:id="@+id/call"
+        android:title="Call"/&gt;
+    &lt;item android:id="@+id/edit"
+        android:title="Edit"/&gt;
+&lt;/menu&gt;    
+</code></pre>               
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     </div>
