@@ -215,356 +215,427 @@
             });
         </script>
         <!-- End of Scroll to Top Button  -->
+        <div class="container">
+            <div class="btn-group" id="btn-group">
+                <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="java.html"
+                        style="text-decoration: none;float: left;"> Java </a> </button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Chapter <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
 
+                    <li><a class="dropdown-item" id="bold" href="#oop"> OOP </a></li>
 
-        <div class="oop">
-            <h2 class="head"> Object Oriented Programming </h2>
-
-            <div class="container">
-                <p>
-                    &nbsp;&nbsp; Object Oriented Programming is an approach that provides the method of modularizing
-                    program.<br />
-                    &nbsp;&nbsp; It Create the partition of memory area that stores the data & function. This partitions
-                    of memory are independent, So the objects can be used in different programs without any
-                    modification.<br />
-                    &nbsp;&nbsp; Object Oriented Programming allows user to decompose a problem into a number of entity
-                    called <strong>" Object "</strong>. It builds data & function more close to the Object. The
-                    Combination of data & methods made an objects . The data of an object can be access by the methods
-                    associated with that object or in other words we can sat that the methods can use only the data
-                    provided in the class.<br />
-                </p>
-                <div class="container">
-                    <strong> # Concepts of OOP: - </strong>
-                    <ul>
-                        <li> Class </li>
-                        <li> Object</li>
-                        <li> Data Abstraction </li>
-                        <li> Inheritance </li>
-                        <li> Polymorphism </li>
-                        <li> Encapsulation </li>
-                        <li> Dynamic Binding </li>
-                        <li> Message Communication </li>
-                    </ul>
-                    <!-- Start of day 11/05/2021 -->
-                    <strong><em> 1) Class: - </em> </strong>
-                    <p>
-                    <ul>
-                        <li> The set of Data & Functions create a user-defined datatype class <strong>" Class
-                                "</strong>.
-                        </li>
-                        <li>
-                            Class is category , it is Collection of objects , a class is template or plan
-                            actually class is describe the object once the class is defined we can create any number of
-                            object
-                            that belongs to it.
-                        </li>
-                    </ul>
-                    </p>
-                    <hr>
-                    <h5>11/05/2021</h5>
-                    <br /><br />
-                    <strong><em> 2) Object: - </em></strong>
-                    <p>
-                    <ul>
-                        <li> Object may represent a place, bank account a table of data etc. </li>
-                        <li> It may anything , it is a basic <strong>runtime entity</strong> in object oriented system,
-                            When
-                            program is executed the objects interact by sending message to one another. </li>
-                        <li>
-                            Eg. <br />&nbsp;&nbsp;If customer and account are two objects in program a customer object
-                            can
-                            send a request to the account object asking for a bank balance .</li>
-                        <li>
-                            Each object contains data & code to manipulate the data, the object can interact with one
-                            another without interfering each others data. </li>
-                    </ul>
-                    </p>
-                    <strong><em> 3) Data Abstraction:- </em></strong>
-                    <p>
-                    <ul>
-                        <li>
-                            Data Abstraction means the act of representing essential feature without including
-                            background
-                            details or explanation . </li>
-                        <li>
-                            Eg.<br />&nbsp;&nbsp; When customer purchase any electronic appliance he or she only
-                            understand
-                            its basic function for its proper working without knowing the inner details of the machine.
-                        </li>
-                        <li>
-                            Class use the concept of abstraction & are defined as a of list abstract attributes. Such as
-                            ,size , cost , & method to operator on these attributes .
-                        </li>
-                    </ul>
-                    </p>
-
-                    <strong><em> 4) Encapsulation: - </em></strong>
-                    <p>
-                    <ul>
-                        <li> Data Encapsulation means wrapping up of data & method into single unit.</li>
-                        <li> The single unit nothing but the class.</li>
-                        <li> The class encapsulate all essential property of object that are to be created.</li>
-                        <li> The data is not accessible to the outside world , only those method that are wrapped inside
-                            the class can access it .</li>
-                        <li><strong>Data Hiding </strong> is also used in Encapsulation.</li>
-                    </ul>
-                    </p>
-                    <!-- Start of day 12/05/2021 -->
-                    <hr>
-
-                    <h5>12/05/2021</h5><br />
-                    <strong><em> 5) Inheritance: - </em></strong>
-                    <p>
-                    <ul>
-                        <li>
-                            Inheritance is concept by which objects of one class can acquire the properties of objects
-                            of
-                            another class.
-                        </li>
-                        <li>
-                            The base class features are inherited by the derived class.
-                        </li>
-                        <li>
-                            Inheritance supports the concept of hierarchical classification. for ex. Robin is a part of
-                            flying bird which is part of class bird. The principal behind this type of classification is
-                            that each derived class shares some common characteristic is with class from which it is
-                            derived.
-                        </li>
-                        <li>
-                            Inheritance provides an important feature of oop which is <strong>"Reusability"</strong>.
-                            This
-                            mean that we can
-                            add additional features to an existing one.
-                        </li>
-                        <li>
-                            The old class is known as base class and new class is known as derived class.
-                        </li>
-                    </ul>
-                    </p>
-                    <strong><em> 6) Polymorphism: -</em></strong>
-                    <p>
-                    <ul>
-                        <li>
-                            Polymorphism is Greek word, means "multiple forms". it is an important concept of object
-                            oriented programming.
-                        </li>
-                        <li>
-                            Polymorphism plays an important role in allowing objects having different internal
-                            structures to
-                            share the same external interface.
-                        </li>
-                        <li>
-                            Ex. <br /> &nbsp;&nbsp;If shape is class having method draw, then multiple objects like
-                            circle,box,triangle
-                            object have the same method draw.
-                        </li>
-                    </ul>
-                    </p>
-                    <strong><em> 7) Dynamic Binding: - </em></strong>
-                    <p>
-                    <ul>
-                        <li>
-                            Dynamic binding is associated with polymorphism and inheritance.
-                        </li>
-                        <li>
-                            Dynamic binding means that the code associated with the given procedure call is not known
-                            until
-                            runtime.
-                        </li>
-                        <li>
-                            Ex.<br /> &nbsp;&nbsp; Consider a function called draw() which is used to draw either a
-                            circle,triangle,or box. by
-                            inheritance every object will have all method.
-                        </li>
-                    </ul>
-                    </p>
-                    <!-- End of day 12/05/2021 -->
-
-                    <!-- Start of day 17/05/2021 -->
-                    <strong><em> 8) Message Passing: cd-top</em></strong>
-                    <p>
-                    <ul>
-                        <li> The Process og programming is OOP language includes following steps : </li>
-                        <li> Creating Class that define variables & method.</li>
-                        <li> Creating Objects from class function.</li>
-                        <li> Establishing communication between object.</li>
-                        <li> Objects communicate with one another through messages.</li>
-                    </ul>
-                    </p>
-                    <hr>
-                    <strong><em> # Application of OOP : </em></strong>
-                    <p>
-                    <ul>
-                        <li> The most popular application of oop in the area of user interface design is windows. There
-                            are hundreds of windowing systems developed using oop techniques.</li>
-                        <li> The different area of applications includes:</li>
-                        <li> Real time systems</li>
-                        <li> Object oriented databases.</li>
-                        <li> Artificial intelligence and expert systems.</li>
-                        <li> Modeling</li>
-                        <li> Office automation system</li>
-                        <li> CAD/CAM systems, etc.</li>
-                    </ul>
-                    </p>
-                    <hr>
-                    <strong><em> # History of JAVA: -</em></strong>
-                    <p>
-                        <li> Java is general purpose object oriented programming language developed by SUN Microsoft
-                            system at USA in 1991.</li>
-                        <li> Originally it was called as oak by James gosling.</li>
-                        <li> It was developed for the development of software for consumer electronic devices like
-                            TV,Toaster,washing machine, oven.</li>
-                        <li> Java is developed with syntactically similar to c and plus plus but removed number of
-                            features of c and c plus plus.</li>
-                    </p>
-                    <!-- End of day 17/05/2021 -->
-                    <h5>18/05/2021</h5><br />
-                    <!-- Start of day 18/05/2021 -->
-                    <p>
-                        <li>Java is Simple, Reliable, Portable and Powerful language.</li>
-                        <li>In 1990 SUN micro system decided to develop special software that could be used to
-                            manipulate consumer electronic devices .this task is handed over to a leader was James
-                            gosling.</li>
-                        <li>In 1991 the possibility of using oops language c++ is explore and new blank page has develop
-                            given the name 'Oak'.</li>
-                        <li>The team green project by SUN in 1992 demonstrated the application of their new language to
-                            control a list of home appliance using hand held devices with tiny touch sensitive screen.
-                        </li>
-                        <li>In 1993 Green project team came with idea of developing web applets using new language that
-                            could run an all types of computers connected to internet.</li>
-                        <li>In 1994 the team develop a web browser "Hot Java", to locate and run applet program on
-                            internet, which is very popular.</li>
-                        <li>In 1995 ook was renamed as "Java".</li>
-                        <li>In 1996 java establish itself not only as a leader for internet programming language is a
-                            platform neutral language.</li>
-                    </p>
-                </div>
-                <p>
-                    <strong><em> # Feature of JAVA: </em></strong>
-                <ol>
-                    <li> Compiled & Interpret </li>
-                    <li> Platform Independent & Portable </li>
-                    <li> Object Oriented </li>
-                    <li> Robust & Secure </li>
-                    <li> Simple , Small ,Familiar </li>
-                    <li> Multithreaded & Interactive </li>
-                    <li> High Performance </li>
-                    <li> Dynamic & Extensible </li>
-                </ol>
-                </p>
-                <strong>
-                    <h3><em>1. Compiled & Interpret : </em></h3>
-                </strong>
-                <p>
-                    &nbsp;&nbsp;Usually computer languages are either interpreted or compiled, Java combined both these
-                    approaches that makes Java to stage system.<br />
-                    &nbsp;&nbsp; Java source code translated into bytecode inspection bytecode are not machine
-                    instruction for in 2nd stage Java interpreter generate machine code that can be directly executed by
-                    the machine that is running the Java program bytecode is highly optimised set of instructions
-                    designed to be executed by Java Runtime system called 'JVM'(Java Virtual Machine).This JVM is
-                    different for different platform, though it is different it interprets the same Java bytecode.<br />
-                </p>
-                <!-- End of day 18/05/2021 -->
-                <!-- Start of Day 19/05/2021 -->
-                <strong>
-                    <h3><em>2. Platform independent & Portable : </em></h3>
-                </strong>
-                <p>
-                    &nbsp;&nbsp; The first step in program writing is to identify the computer on which it is
-                    expected to work this required hardware particularly processor chips use as the basic of computer
-                    and
-                    operating system the combination of hardware and software is referred to as the platform. Java
-                    program are portable they can be easily moved from one computer system to another, anywhere at any
-                    time.<br />
-                    &nbsp;&nbsp; Java uses an interpreter to execute the code so that it may run different
-                    computer without any changes to source code though operating system is upgraded in process or system
-                    resources we can download JAVA applet from a remote computer on to a locally PC via Internet and
-                    executed local is this to make our popular language for programming internet.<br />
-                    &nbsp;&nbsp; Java Ensure portable two way, <br />
-                <ol>
-                    <li> Java Compiler generates bytecode instructions that can be implemented into any machine .</li>
-                    <li> The size of Primitive data type of machine independent</li>
-                </ol>
-                </p>
-                <strong>
-                    <h3><em>3. Object Oriented : </em></h3>
-                </strong>
-                <p>
-                    &nbsp;&nbsp; Java is truly Object Oriented Programming Language, almost everything in java is an
-                    object.<br />&nbsp;&nbsp; The object model in java is simple and easy to extend. All program code &
-                    data preside
-                    within a Object & Class.<b />
-                </p>
-                <strong>
-                    <h3><em>4. Robust & Secure : </em></h3>
-                </strong>
-                <p>
-                <ol>
-                    <li>
-                        <strong><em>Robust :- </em></strong>
-                        <ul>
-                            <li>
-                                Java is Robust language it provide many safeguard to ensure reliability of code it has
-                                strict compile time & runtime checking for datatype.
-                            </li>
-                            <li>
-                                In multi-platform environment of way the java programs are reliable to work on different
-                                verifies of computer system.
-                            </li>
-                            <li>It is reliable in case as memory management & mishandled exceptional condition . </li>
-                            <li>
-                                In memory management java virtually manages the memory allocation & deallocation by
-                                providing garbage collection for unused object.
-                            </li>
-                            <li>
-                                Java provides exceptional handling feature to handle exceptional condition like division
-                                by 0 etc. that eliminates any risks of crashing the system.
-                            </li>
-                        </ul>
-                    </li><br />
-                    <li>
-                        <strong><em>Secure :- </em></strong>
-                        <ul>
-                            <li>For Programming on internet there may be many problems about security like viruses & if
-                                burst of resources by program viruses may affected on computer when any program download
-                                from internet another type of program also existed that can gather private info such as
-                                credit card number, bank account, passport etc. </li>
-                            <li>Java provides a solution of problem that it verifies all memory access and also ensure
-                                number of viruses are communicated with an applet . </li>
-                            <li> The absence of pointer in java ensure that program cannot get access to memory location
-                                without proper authorization. </li>
-
-                        </ul>
-                    </li>
-                </ol>
-                </p>
-                <p>
-                    <strong>
-                        <h3><em>5. Distributed :</em></h3>
-                    </strong>
-                    
-                        <ul>
-                            <li>Java is designed as a distributed language for creating application on network, it has ability to share both data & programs.</li>
-                            <li>Java application are open & access remote object on internet & easily this enables multiple programmers at multiple location to collaborate work together on a single project.</li>
-                        </ul>
-                    
-               
-                </p>
-                <p>
-                    <strong>
-                        <h3><em>6. Familiar, Simple & Small : </em></h3>
-                    </strong>
-                    <p>
-                        <ul>
-                            <li> Java look familiar to existing programmers as it is modeled on a C & C++ languages.</li>
-                            <li> Java code looks like C++ code even though some redundant or sources of unreliable code are avoided.</li>
-                        </ul>
-                    </p>
-                </p>
-                <!-- End  of Day 19/05/2021 -->
-
+                    <li><a class="dropdown-item" id="bold" href="#feature"> Features </a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                </ul>
             </div>
         </div>
+        <div class="main">
+            <div class="oop" id="oop">
+                <h2 class="head"> Object Oriented Programming </h2>
+
+                <div class="container">
+                    <p>
+                        &nbsp;&nbsp; Object Oriented Programming is an approach that provides the method of modularizing
+                        program.<br />
+                        &nbsp;&nbsp; It Create the partition of memory area that stores the data & function. This
+                        partitions
+                        of memory are independent, So the objects can be used in different programs without any
+                        modification.<br />
+                        &nbsp;&nbsp; Object Oriented Programming allows user to decompose a problem into a number of
+                        entity
+                        called <strong>" Object "</strong>. It builds data & function more close to the Object. The
+                        Combination of data & methods made an objects . The data of an object can be access by the
+                        methods
+                        associated with that object or in other words we can sat that the methods can use only the data
+                        provided in the class.<br />
+                    </p>
+                    <div class="container">
+                        <strong> # Concepts of OOP: - </strong>
+                        <ul>
+                            <li> Class </li>
+                            <li> Object</li>
+                            <li> Data Abstraction </li>
+                            <li> Inheritance </li>
+                            <li> Polymorphism </li>
+                            <li> Encapsulation </li>
+                            <li> Dynamic Binding </li>
+                            <li> Message Communication </li>
+                        </ul>
+                        <!-- Start of day 11/05/2021 -->
+                        <strong><em> 1) Class: - </em> </strong>
+                        <p>
+                        <ul>
+                            <li> The set of Data & Functions create a user-defined datatype class <strong>" Class
+                                    "</strong>.
+                            </li>
+                            <li>
+                                Class is category , it is Collection of objects , a class is template or plan
+                                actually class is describe the object once the class is defined we can create any number
+                                of
+                                object
+                                that belongs to it.
+                            </li>
+                        </ul>
+                        </p>
+                        <hr>
+                        <h5>11/05/2021</h5>
+                        <br /><br />
+                        <strong><em> 2) Object: - </em></strong>
+                        <p>
+                        <ul>
+                            <li> Object may represent a place, bank account a table of data etc. </li>
+                            <li> It may anything , it is a basic <strong>runtime entity</strong> in object oriented
+                                system,
+                                When
+                                program is executed the objects interact by sending message to one another. </li>
+                            <li>
+                                Eg. <br />&nbsp;&nbsp;If customer and account are two objects in program a customer
+                                object
+                                can
+                                send a request to the account object asking for a bank balance .</li>
+                            <li>
+                                Each object contains data & code to manipulate the data, the object can interact with
+                                one
+                                another without interfering each others data. </li>
+                        </ul>
+                        </p>
+                        <strong><em> 3) Data Abstraction:- </em></strong>
+                        <p>
+                        <ul>
+                            <li>
+                                Data Abstraction means the act of representing essential feature without including
+                                background
+                                details or explanation . </li>
+                            <li>
+                                Eg.<br />&nbsp;&nbsp; When customer purchase any electronic appliance he or she only
+                                understand
+                                its basic function for its proper working without knowing the inner details of the
+                                machine.
+                            </li>
+                            <li>
+                                Class use the concept of abstraction & are defined as a of list abstract attributes.
+                                Such as
+                                ,size , cost , & method to operator on these attributes .
+                            </li>
+                        </ul>
+                        </p>
+
+                        <strong><em> 4) Encapsulation: - </em></strong>
+                        <p>
+                        <ul>
+                            <li> Data Encapsulation means wrapping up of data & method into single unit.</li>
+                            <li> The single unit nothing but the class.</li>
+                            <li> The class encapsulate all essential property of object that are to be created.</li>
+                            <li> The data is not accessible to the outside world , only those method that are wrapped
+                                inside
+                                the class can access it .</li>
+                            <li><strong>Data Hiding </strong> is also used in Encapsulation.</li>
+                        </ul>
+                        </p>
+                        <!-- Start of day 12/05/2021 -->
+                        <hr>
+
+                        <h5>12/05/2021</h5><br />
+                        <strong><em> 5) Inheritance: - </em></strong>
+                        <p>
+                        <ul>
+                            <li>
+                                Inheritance is concept by which objects of one class can acquire the properties of
+                                objects
+                                of
+                                another class.
+                            </li>
+                            <li>
+                                The base class features are inherited by the derived class.
+                            </li>
+                            <li>
+                                Inheritance supports the concept of hierarchical classification. for ex. Robin is a part
+                                of
+                                flying bird which is part of class bird. The principal behind this type of
+                                classification is
+                                that each derived class shares some common characteristic is with class from which it is
+                                derived.
+                            </li>
+                            <li>
+                                Inheritance provides an important feature of oop which is
+                                <strong>"Reusability"</strong>.
+                                This
+                                mean that we can
+                                add additional features to an existing one.
+                            </li>
+                            <li>
+                                The old class is known as base class and new class is known as derived class.
+                            </li>
+                        </ul>
+                        </p>
+                        <strong><em> 6) Polymorphism: -</em></strong>
+                        <p>
+                        <ul>
+                            <li>
+                                Polymorphism is Greek word, means "multiple forms". it is an important concept of object
+                                oriented programming.
+                            </li>
+                            <li>
+                                Polymorphism plays an important role in allowing objects having different internal
+                                structures to
+                                share the same external interface.
+                            </li>
+                            <li>
+                                Ex. <br /> &nbsp;&nbsp;If shape is class having method draw, then multiple objects like
+                                circle,box,triangle
+                                object have the same method draw.
+                            </li>
+                        </ul>
+                        </p>
+                        <strong><em> 7) Dynamic Binding: - </em></strong>
+                        <p>
+                        <ul>
+                            <li>
+                                Dynamic binding is associated with polymorphism and inheritance.
+                            </li>
+                            <li>
+                                Dynamic binding means that the code associated with the given procedure call is not
+                                known
+                                until
+                                runtime.
+                            </li>
+                            <li>
+                                Ex.<br /> &nbsp;&nbsp; Consider a function called draw() which is used to draw either a
+                                circle,triangle,or box. by
+                                inheritance every object will have all method.
+                            </li>
+                        </ul>
+                        </p>
+                        <!-- End of day 12/05/2021 -->
+
+                        <!-- Start of day 17/05/2021 -->
+                        <strong><em> 8) Message Passing: cd-top</em></strong>
+                        <p>
+                        <ul>
+                            <li> The Process og programming is OOP language includes following steps : </li>
+                            <li> Creating Class that define variables & method.</li>
+                            <li> Creating Objects from class function.</li>
+                            <li> Establishing communication between object.</li>
+                            <li> Objects communicate with one another through messages.</li>
+                        </ul>
+                        </p>
+                        <hr>
+                        <strong><em> # Application of OOP : </em></strong>
+                        <p>
+                        <ul>
+                            <li> The most popular application of oop in the area of user interface design is windows.
+                                There
+                                are hundreds of windowing systems developed using oop techniques.</li>
+                            <li> The different area of applications includes:</li>
+                            <li> Real time systems</li>
+                            <li> Object oriented databases.</li>
+                            <li> Artificial intelligence and expert systems.</li>
+                            <li> Modeling</li>
+                            <li> Office automation system</li>
+                            <li> CAD/CAM systems, etc.</li>
+                        </ul>
+                        </p>
+                        <hr>
+                        <strong><em> # History of JAVA: -</em></strong>
+                        <p>
+                            <li> Java is general purpose object oriented programming language developed by SUN Microsoft
+                                system at USA in 1991.</li>
+                            <li> Originally it was called as oak by James gosling.</li>
+                            <li> It was developed for the development of software for consumer electronic devices like
+                                TV,Toaster,washing machine, oven.</li>
+                            <li> Java is developed with syntactically similar to c and plus plus but removed number of
+                                features of c and c plus plus.</li>
+                        </p>
+                        <!-- End of day 17/05/2021 -->
+                        <h5>18/05/2021</h5><br />
+                        <!-- Start of day 18/05/2021 -->
+                        <p>
+                            <li>Java is Simple, Reliable, Portable and Powerful language.</li>
+                            <li>In 1990 SUN micro system decided to develop special software that could be used to
+                                manipulate consumer electronic devices .this task is handed over to a leader was James
+                                gosling.</li>
+                            <li>In 1991 the possibility of using oops language c++ is explore and new blank page has
+                                develop
+                                given the name 'Oak'.</li>
+                            <li>The team green project by SUN in 1992 demonstrated the application of their new language
+                                to
+                                control a list of home appliance using hand held devices with tiny touch sensitive
+                                screen.
+                            </li>
+                            <li>In 1993 Green project team came with idea of developing web applets using new language
+                                that
+                                could run an all types of computers connected to internet.</li>
+                            <li>In 1994 the team develop a web browser "Hot Java", to locate and run applet program on
+                                internet, which is very popular.</li>
+                            <li>In 1995 ook was renamed as "Java".</li>
+                            <li>In 1996 java establish itself not only as a leader for internet programming language is
+                                a
+                                platform neutral language.</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature" id="feature">
+                <h2 class="head"> Fetures of Java </h2>
+                <div class="container">
+                    <p>
+                        <strong><em> # Feature of JAVA: </em></strong>
+                    <ol>
+                        <li> Compiled & Interpret </li>
+                        <li> Platform Independent & Portable </li>
+                        <li> Object Oriented </li>
+                        <li> Robust & Secure </li>
+                        <li> Simple , Small ,Familiar </li>
+                        <li> Multithreaded & Interactive </li>
+                        <li> High Performance </li>
+                        <li> Dynamic & Extensible </li>
+                    </ol>
+                    </p>
+                    <strong>
+                        <h3><em>1. Compiled & Interpret : </em></h3>
+                    </strong>
+                    <p>
+                        &nbsp;&nbsp;Usually computer languages are either interpreted or compiled, Java combined both
+                        these
+                        approaches that makes Java to stage system.<br />
+                        &nbsp;&nbsp; Java source code translated into bytecode inspection bytecode are not machine
+                        instruction for in 2nd stage Java interpreter generate machine code that can be directly
+                        executed by
+                        the machine that is running the Java program bytecode is highly optimised set of instructions
+                        designed to be executed by Java Runtime system called 'JVM'(Java Virtual Machine).This JVM is
+                        different for different platform, though it is different it interprets the same Java
+                        bytecode.<br />
+                    </p>
+                    <!-- End of day 18/05/2021 -->
+                    <!-- Start of Day 19/05/2021 -->
+                    <strong>
+                        <h3><em>2. Platform independent & Portable : </em></h3>
+                    </strong>
+                    <p>
+                        &nbsp;&nbsp; The first step in program writing is to identify the computer on which it is
+                        expected to work this required hardware particularly processor chips use as the basic of
+                        computer
+                        and
+                        operating system the combination of hardware and software is referred to as the platform. Java
+                        program are portable they can be easily moved from one computer system to another, anywhere at
+                        any
+                        time.<br />
+                        &nbsp;&nbsp; Java uses an interpreter to execute the code so that it may run different
+                        computer without any changes to source code though operating system is upgraded in process or
+                        system
+                        resources we can download JAVA applet from a remote computer on to a locally PC via Internet and
+                        executed local is this to make our popular language for programming internet.<br />
+                        &nbsp;&nbsp; Java Ensure portable two way, <br />
+                    <ol>
+                        <li> Java Compiler generates bytecode instructions that can be implemented into any machine .
+                        </li>
+                        <li> The size of Primitive data type of machine independent</li>
+                    </ol>
+                    </p>
+                    <strong>
+                        <h3><em>3. Object Oriented : </em></h3>
+                    </strong>
+                    <p>
+                        &nbsp;&nbsp; Java is truly Object Oriented Programming Language, almost everything in java is an
+                        object.<br />&nbsp;&nbsp; The object model in java is simple and easy to extend. All program
+                        code &
+                        data preside
+                        within a Object & Class.<b />
+                    </p>
+                    <strong>
+                        <h3><em>4. Robust & Secure : </em></h3>
+                    </strong>
+                    <p>
+                    <ol>
+                        <li>
+                            <strong><em>Robust :- </em></strong>
+                            <ul>
+                                <li>
+                                    Java is Robust language it provide many safeguard to ensure reliability of code it
+                                    has
+                                    strict compile time & runtime checking for datatype.
+                                </li>
+                                <li>
+                                    In multi-platform environment of way the java programs are reliable to work on
+                                    different
+                                    verifies of computer system.
+                                </li>
+                                <li>It is reliable in case as memory management & mishandled exceptional condition .
+                                </li>
+                                <li>
+                                    In memory management java virtually manages the memory allocation & deallocation by
+                                    providing garbage collection for unused object.
+                                </li>
+                                <li>
+                                    Java provides exceptional handling feature to handle exceptional condition like
+                                    division
+                                    by 0 etc. that eliminates any risks of crashing the system.
+                                </li>
+                            </ul>
+                        </li><br />
+                        <li>
+                            <strong><em>Secure :- </em></strong>
+                            <ul>
+                                <li>For Programming on internet there may be many problems about security like viruses &
+                                    if
+                                    burst of resources by program viruses may affected on computer when any program
+                                    download
+                                    from internet another type of program also existed that can gather private info such
+                                    as
+                                    credit card number, bank account, passport etc. </li>
+                                <li>Java provides a solution of problem that it verifies all memory access and also
+                                    ensure
+                                    number of viruses are communicated with an applet . </li>
+                                <li> The absence of pointer in java ensure that program cannot get access to memory
+                                    location
+                                    without proper authorization. </li>
+
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                    <p>
+                        <strong>
+                            <h3><em>5. Distributed :</em></h3>
+                        </strong>
+
+                    <ul>
+                        <li>Java is designed as a distributed language for creating application on network, it has
+                            ability to share
+                            both data & programs.</li>
+                        <li>Java application are open & access remote object on internet & easily this enables multiple
+                            programmers
+                            at multiple location to collaborate work together on a single project.</li>
+                    </ul>
+
+
+                    </p>
+                    <p>
+                        <strong>
+                            <h3><em>6. Familiar, Simple & Small : </em></h3>
+                        </strong>
+                    <p>
+                    <ul>
+                        <li> Java look familiar to existing programmers as it is modeled on a C & C++ languages.</li>
+                        <li> Java code looks like C++ code even though some redundant or sources of unreliable code are
+                            avoided.
+                        </li>
+                    </ul>
+                    </p>
+                    </p>
+                    <!-- End  of Day 19/05/2021 -->
+
+                </div>
+            </div>
+
+        </div>
+
+
 
         <!-- Optional JavaScript; choose one of the two! -->
 
