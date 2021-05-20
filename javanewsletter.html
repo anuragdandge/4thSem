@@ -38,19 +38,23 @@
         }
 
         .head {
-            padding-left: 20px;
+
             background-color: rgb(189, 35, 81);
             font-family: 'Open Sans', sans-serif;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            text-align: center;
         }
 
         h5 {
-            float: right;
-            margin-right: 30px;
+
+            margin-left: .2em;
             color: rgb(185, 159, 109);
         }
 
         p {
             font-family: 'Montserrat', sans-serif;
+            font-weight: lighter;
         }
 
         td {
@@ -65,10 +69,10 @@
         }
 
         .code {
-            background-color: rgb(189, 35, 81);
-            border: 2px groove rgb(255, 255, 255);
+            /* border: 1px solid  rgb(255, 255, 255); */
             padding: 5px;
             border-radius: 5px;
+            box-shadow: 0px 0px 5px 1px black;
         }
 
         article {
@@ -164,7 +168,7 @@
                     color: #fff;
                     margin-top: 10px
                 }
-    
+
                 #toTopBtn {
                     position: fixed;
                     bottom: 26px;
@@ -173,22 +177,22 @@
                     padding: 21px;
                     background-color: hsla(5, 76%, 62%, .8)
                 }
-    
+
                 .js .cd-top--fade-out {
                     opacity: .5
                 }
-    
+
                 .js .cd-top--is-visible {
                     visibility: visible;
                     opacity: 1
                 }
-    
+
                 .js .cd-top {
                     visibility: hidden;
                     opacity: 0;
                     transition: opacity .3s, visibility .3s, background-color .3s
                 }
-    
+
                 .cd-top {
                     position: fixed;
                     bottom: 20px;
@@ -206,7 +210,7 @@
                     background-color: rgba(232, 84, 212, 0.8);
                     /* background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8) */
                 }
-    
+
                 .height {
                     height: 0px
                 }
@@ -226,7 +230,7 @@
                             $('#toTopBtn').fadeOut();
                         }
                     });
-    
+
                     $('#toTopBtn').click(function () {
                         $("html, body").animate({
                             scrollTop: 0
@@ -235,123 +239,94 @@
                     });
                 });
             </script>
-            <div class="container">
-                <div class="btn-group" id="btn-group">
-                    <button type="button" class="btn btn-light" id="but"> <a id="lnk" href="#"
-                            style="text-decoration: none;float: left;"> JAVA </a> </button>
-                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Practical <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#practical1" id="bold"> Assignment 1 </a></li>
-                        <li><a class="dropdown-item" href="#practical2" id="bold"> Assignment 2 </a></li>
+            <div class="container"></div>
+            <p>
+            <h6 class="head"> &nbsp;&nbsp;Create Your first Java☕ Project in Eclipse 🤘 </h6>
+            <h5> Lets Get Started : - </h5>
+            </p>
+            <ul>
+                <li> Step 1 : -
+                    <br />Create a Project - <br />
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/st1.jpg" alt="loading..." height="auto" width="100%"
+                            style="border-radius: 2px;">
+                    </div>
+                </li>
 
-                    </ul>
-                </div>
-            </div>
-
-<!-- Help -->
-<div class="container">
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-         <a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-03/R/eclipse-jee-2021-03-R-win32-x86_64.zip">Download</a> Eclipse and  <a href="javanewsletter.html">Create & Run Project </a> visit links 😁!!! 
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-</div>
-
-<!-- Help -->
-
-            <div class="practical1" id="practical1">
-            <h2 class="head">Assignment 1 </h2>
-            <h5>12/05/2021</h5><br/>
-            <div class="container">
-                <strong><em><u> Aim: -</u></em></strong> Write a Program to display biodata.<br /><br />
-                <strong><em><u>Code: -</u></em></strong><br /><br />
-                
-                    <pre style="border-radius: 10px;"><code class="java">                   
-    public class Assignment1 {
-    //Assignment No. 1 
-    //Date = 12/05/2021
-    //Aim :- Write a program to display biodata 
-    public static void main(String[] args) {
-
-        System.out.println("Name:- Your Name ");
-        System.out.println("Age:- 20");
-        System.out.println("College Name:- Deogiri College Aurangabad");
-        System.out.println("City:- Aurangabad");
-        System.out.println("B.Sc.It In Deogiri College");         
-        }
-                        
-    }
-                        </code></pre>
-                    <strong><em><u>Output: - </u></em></strong>
+                <li>
+                    Step 2 : -
+                    <br />
+                    <p>
+                        &nbsp;&nbsp; Select a Project <b>Name</b> & Choose <b>Location</b> where to save your project -
+                    </p>
 
                     <div class="container">
-                        <img class="img img-fluid" src="Images/javaout1.jpg" alt="loading..." height="auto" width="100%"
-                            style="border-radius: 5px;">
+                        <img class="img img-fluid" src="Images/st2.jpg" alt="loading..." height="auto" width="100%"
+                            style="border-radius: 2px;">
+                    </div>
+                </li>
+                <li>
+                    Step 3 :-
+                    <br />
+                    <p>
+                        &nbsp;&nbsp; After creating a project click on project name then src <br />
+                        &nbsp;&nbsp; <b>Right click </b> on 'src' 📂 > New > Class
+                    </p>
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/st3.jpg" alt="loading..." height="auto" width="100%"
+                            style="border-radius: 2px;">
+                    </div>
+                </li>
+                <li>
+                    Step 4 :-
+                    <br />
+                    <p>
+                        -Select Class Name i.e. <b>demo</b> <br />
+                        -Select 'public static void main'<br />
+                        -Finish.
+                    </p>
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/st4.jpg" alt="loading..." height="auto" width="100%"
+                            style="border-radius: 2px;">
+                    </div>
+                </li>
+                <li>
+                    Step 5 :-
+                    <br />
+                    <p>
+                        Write Your code,
+                    </p>
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/st5.jpg" alt="loading..." height="auto" width="100%"
+                            style="border-radius: 2px;">
                     </div>
 
-            </div>
-        </div>
-        <div class="practical2" id="practical2">
-            <h2 class="head"> Assignment 2 </h2>
-            <h5>19/05/2021</h5><br/>
+                </li>
+                <li>
+                    Step 6 :-
+                    <br />
+                    <p>
+                        -After writing your code <b>save</b> it <br />
+                        -Right click <b>Run As > Java Application</b>
+                    </p>
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/st6.jpg" alt="loading..." height="auto" width="100%"
+                            style="border-radius: 2px;">
+                    </div>
+                </li>
+
+            </ul>
+            <hr>
+            <p> <strong> &nbsp;&nbsp;Output :- </strong></p>
             <div class="container">
-                
-                    <strong><em><u> Aim: -</u></em></strong> Write a Program to perform Arithmetic Operation Using Switch Case.<br /><br />
-                    <strong><em><u>Code: -</u></em></strong><br /><br />
-
-                    <pre style="border-radius: 10px;"><code class="java">
-    import java.util.Scanner;
-
-    public class Assignment2 {
-            //Assignment No. 2 
-            //Date = 19/05/2021
-            //Aim : Write a Program to perform Arithmetic Operation Using Switch Case
-            public static void main(String[] args) {
-              Scanner sc = new Scanner(System.in);
-              System.out.println(" Enter any two Number: - ");
-              int a = sc.nextInt();
-              int b = sc.nextInt();
-              System.out.println("Select Operator :- \n + for Addition \n - for Subtraction \n * for Multiplication \n / for Division \n % for Mod ");
-              char op = sc.next().charAt(0);
-              int res;
-              switch(op){
-              case'+':
-                   res = a + b ;
-                  System.out.println(" Addition = " + res);
-                  break;
-              case'-':
-                   res = a - b ;
-                  System.out.println(" Subtraction = " + res);
-                  break;
-              case'*':
-                   res = a * b ;
-                  System.out.println(" Multiplication  = " + res);
-                  break;
-              case'/':
-                  res = a / b ;
-                  System.out.println(" Division  = " + res);
-                  break;
-              case'%':
-                  res = a % b ;
-                  System.out.println(" Mod  = " + res);
-                  break;
-              }         
-        }
-    }    
-</code></pre>
-<strong><em><u>Output: - </u></em></strong>
-
-<div class="container">
-    <img class="img img-fluid" src="Images/javaout2.jpg" alt="loading..." height="auto" width="100%"
-        style="border-radius: 5px;">
-</div>
-                </div>
+                <img class="img img-fluid" src="Images/st7.jpg" alt="loading..." height="auto" width="100%"
+                    style="border-radius: 2px;">
             </div>
 
+        </div>
 
-      
+
+
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
