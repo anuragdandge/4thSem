@@ -248,9 +248,9 @@
                             Practical <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#practical1" id="bold"> Practical 1 </a></li>
-                             <li><a class="dropdown-item" href="#practical2" id="bold"> Practical 2 </a></li>
-
+                            <li><a class="dropdown-item" href="#practical1" id="bold"> Assignment  1 </a></li>
+                             <li><a class="dropdown-item" href="#practical2" id="bold"> Assignment  2 </a></li>
+                             <li><a class="dropdown-item" href="#practical3" id="bold"> Assignment 3 </a></li>
                         </ul>
                     </div>
                 </div>
@@ -510,7 +510,97 @@
                       </div>
 
                 </div>
+                <hr>
                 <!-- Practical 2 End -->
+                <!-- Practical 3 Start -->
+                <div id="practical3">
+                  <h2 class="head">Assignment 3 </h2>
+                  <h5>20/05/2021</h5><br/>
+                  <div class="container">
+                    <strong><em>Aim: -</em></strong> To study use of SELECT statement.<br />
+                    <strong><em>Theory: -</em></strong><br />
+                    <p>
+                      &nbsp;&nbsp; <b> Basic SELECT statement:</b> <br />
+                      &nbsp;&nbsp; Once the data has been inserted into a table , the most logical operation would be to view what has
+                      been inserted. The SELECT SQL verb is used to achieve this. The SELECT command is used to retrieve rows selected
+                      from one or more tables .<br /><br />
+                      <b>In order to view global data the syntax is , </b>
+                    <pre><code class="sql"> SELECT &lt;ColumnName1&gt; TO  &lt;ColumnNameN&gt; FROM  &lt;table_name&gt; </code></pre>
+                    <b>OR</b><br /><br />
+                    <pre><code class="sql"> SELECT * FROM  &lt;table_name&gt; </code></pre>
+                    <hr>
+                    <p>
+                      <b> A Select clause specifies the table name.</b><br />
+                      Asterisk <b>( * )</b> selects all the column from the table distinct suppress duplicate selecting all
+                      columns.<br /><br />
+                      &nbsp;&nbsp; Example ,
+                    <pre><code class="sql"> SELECT * FROM  emp </code></pre>
+                    <pre><code class="sql"> SELECT * FROM  dept </code></pre>
+                    </p>
+                    <hr>
+                    <strong><em> # Selecting specific column </em></strong>
+                    <p>
+                      &nbsp;&nbsp; Ex , <br />
+                    <pre><code class="sql"> SELECT empno,ename FROM  emp </code></pre>
+                    <pre><code class="sql"> SELECT deptno,dname FROM  dept </code></pre>
+                    Now we see the select statement by using different example .<br />
+                    &nbsp;&nbsp; Ex , <br />
+                    &nbsp;&nbsp;&nbsp; Q. Show all CustomerID, CustomerName, Address, City, ContactName from Customer;
+                    <div class="container">
+                      <strong><em> # Filtering Table Name: </em></strong>
+                      <p>
+                        &nbsp;&nbsp; While viewing data from a table it is rare that all the data from the table will be required each
+                        time.<br />
+                        &nbsp;&nbsp; Hence, SQL provides a method of filtering table data that is not required .<br />
+                        &nbsp;&nbsp; The way of filtering table data are :<br />
+                        <strong><em> # Selected columns & all rows: </em></strong><br />
+                        &nbsp;&nbsp; The retrieval of specific columns from table can be done as shown below,<br /><br />
+                        Syntax, <br />
+                      <pre><code class="sql">SELECT &lt;ColumnName1&gt; TO &lt;ColumnName2&gt; FROM &lt;TableName&gt;</code></pre>
+                      </p>
+                    </div>
+                    </p>
+                    <strong><em> # Select Rows & all column </em></strong><br /><br />
+                    <p>
+                      &nbsp;&nbsp; Information of a particular client is to be retrieved from a Table it is retrieval must be used on
+                      a specific condition.<br /><br />
+                      &nbsp;&nbsp; The SELECT statement is used until now displayed all rows. This is because there was no conditions
+                      set
+                      that informed about how to choose a specific set of rows from any table. There is an option of using WHERE
+                      clause sin any SQL Query to apply filter on rows retrieved. <br /><br />
+                      &nbsp;&nbsp; When a WHERE Clause is added to the SQL Query the Oracle engine compares each record in the table
+                      with other conditions specified in the WHERE clause. The Oracle engine displays only those records that specify
+                      the specified condition. <br />
+                    </p>
+                    </p>
+                  </div>
+                  <div class="container">
+                    <p>
+                      <b> Syntax : </b>
+                    <pre><code class="sql"> SELECT * FROM &lt;table_name&gt; WHERE &lt;condition&gt;</code></pre>
+                    <p> Here ,<br />&nbsp;&nbsp; &lt;condition&gt; is always quantified as &lt; ColumnName = Value &gt;
+                      <br /> Ex. <br />
+                      &nbsp; <b> Q.</b> Display the customer details where named Rohit Sharma.<br /><br />
+                    <pre><code class="sql">SELECT * FROM customer details WHERE CustomerName='Rohit Sharma'</code></pre>
+                    </p>
+                    <p>
+                      <b>i.</b> Selected column & Selected Rows : <br />
+                      &nbsp;&nbsp; To view a specific set of rows & columns from a table the Syntax will be as shown,
+                    <pre><code class="sql">SELECT &lt;ColumnName1&gt;,&lt;ColumnName2&gt; FROM &lt;TableName&gt; WHERE &lt;condition&gt;</code></pre>
+                    </p>
+                    <p>
+                      <b>Example:</b><br/>
+                      &nbsp;&nbsp;<b>Q.</b> List the customer name from CustomerTable where country name is India. <br/>
+                      <pre><code class="sql">SELECT CustomerName,Country FROM Customer WHERE Country='India'</code></pre>
+                    </p>
+                      <strong>Conclusion: </strong> Thus we have a different ways to retrieve or select data from tables 
+                   
+                    </p>
+                  </div>
+              <hr>
+                </div>
+                <!-- Practical 3 End -->
+
             </div>
         </div>
         </div>
