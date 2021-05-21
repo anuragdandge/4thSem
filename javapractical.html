@@ -164,7 +164,7 @@
                     color: #fff;
                     margin-top: 10px
                 }
-    
+
                 #toTopBtn {
                     position: fixed;
                     bottom: 26px;
@@ -173,22 +173,22 @@
                     padding: 21px;
                     background-color: hsla(5, 76%, 62%, .8)
                 }
-    
+
                 .js .cd-top--fade-out {
                     opacity: .5
                 }
-    
+
                 .js .cd-top--is-visible {
                     visibility: visible;
                     opacity: 1
                 }
-    
+
                 .js .cd-top {
                     visibility: hidden;
                     opacity: 0;
                     transition: opacity .3s, visibility .3s, background-color .3s
                 }
-    
+
                 .cd-top {
                     position: fixed;
                     bottom: 20px;
@@ -206,7 +206,7 @@
                     background-color: rgba(232, 84, 212, 0.8);
                     /* background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8) */
                 }
-    
+
                 .height {
                     height: 0px
                 }
@@ -226,7 +226,7 @@
                             $('#toTopBtn').fadeOut();
                         }
                     });
-    
+
                     $('#toTopBtn').click(function () {
                         $("html, body").animate({
                             scrollTop: 0
@@ -246,28 +246,33 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#practical1" id="bold"> Assignment 1 </a></li>
                         <li><a class="dropdown-item" href="#practical2" id="bold"> Assignment 2 </a></li>
+                        <li><a class="dropdown-item" href="#practical3" id="bold"> Assignment 3 </a></li>
+                        <li><a class="dropdown-item" href="#practical4" id="bold"> Assignment 4 </a></li>
+
 
                     </ul>
                 </div>
             </div>
 
-<!-- Help -->
-<div class="container">
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-         <a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-03/R/eclipse-jee-2021-03-R-win32-x86_64.zip">Download</a> Eclipse and  <a href="javanewsletter.html">Create & Run Project </a> visit links 😁!!! 
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-</div>
+            <!-- Help -->
+            <div class="container">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <a
+                        href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-03/R/eclipse-jee-2021-03-R-win32-x86_64.zip">Download</a>
+                    Eclipse and <a href="javanewsletter.html">Create & Run Project </a> visit links 😁!!!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
 
-<!-- Help -->
+            <!-- Help -->
 
             <div class="practical1" id="practical1">
-            <h2 class="head">Assignment 1 </h2>
-            <h5>12/05/2021</h5><br/>
-            <div class="container">
-                <strong><em><u> Aim: -</u></em></strong> Write a Program to display biodata.<br /><br />
-                <strong><em><u>Code: -</u></em></strong><br /><br />
-                
+                <h2 class="head">Assignment 1 </h2>
+                <h5>12/05/2021</h5><br />
+                <div class="container">
+                    <strong><em><u> Aim: -</u></em></strong> Write a Program to display biodata.<br /><br />
+                    <strong><em><u>Code: -</u></em></strong><br /><br />
+
                     <pre style="border-radius: 10px;"><code class="java">                   
     public class Assignment1 {
     //Assignment No. 1 
@@ -291,14 +296,15 @@
                             style="border-radius: 5px;">
                     </div>
 
+                </div>
             </div>
-        </div>
-        <div class="practical2" id="practical2">
-            <h2 class="head"> Assignment 2 </h2>
-            <h5>19/05/2021</h5><br/>
-            <div class="container">
-                
-                    <strong><em><u> Aim: -</u></em></strong> Write a Program to perform Arithmetic Operation Using Switch Case.<br /><br />
+            <div class="practical2" id="practical2">
+                <h2 class="head"> Assignment 2 </h2>
+                <h5>19/05/2021</h5><br />
+                <div class="container">
+
+                    <strong><em><u> Aim: -</u></em></strong> Write a Program to perform Arithmetic Operation Using
+                    Switch Case.<br /><br />
                     <strong><em><u>Code: -</u></em></strong><br /><br />
 
                     <pre style="border-radius: 10px;"><code class="java">
@@ -341,31 +347,150 @@
         }
     }    
 </code></pre>
+                    <strong><em><u>Output: - </u></em></strong>
+
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/javaout2.jpg" alt="loading..." height="auto" width="100%"
+                            style="border-radius: 5px;">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="practical3" id="practical3">
+               <h2 class="head">Assignment 3 </h2>
+               <h5>21/05/2021</h5><br/>
+               <div class="container">
+                <strong><em><u> Aim: -</u></em></strong> Write a program  to Calculate area of Rectangle , Triangle ,Circle<br /><br />
+                <strong><em><u>Code: -</u></em></strong><br /><br />
+
+<pre style="border-radius: 7px 7px 7px 7px;">    
+<code style="border-radius: 7px 7px 7px 7px;" class="java">
+    //3)WAP to Calculate area of Rectangle , Triangle ,Circle
+    //21/05/2021
+    package demo;
+
+    public class Assign3 {
+      double pi=3.14;
+      double r,length,width,height,base,Tarea,Rarea,Carea;
+    
+       void accept(){
+           r = 3;
+           length = 10;
+           width = 7;
+           height = 4;
+           base = 6;
+       }
+        void Tarea(){
+            Tarea = (height*base)/2;
+    
+        }
+        void Rarea(){
+            Rarea = (length*width)/2;
+    
+        }
+        void Carea(){
+            Carea = pi*r*r;
+            
+        }
+        void dis() {
+            System.out.println("Area of Triangle = " + Tarea );
+            System.out.println("Area of Rectangle = " + Rarea );
+            System.out.println("Area of Circle = " + Carea );       
+        }
+      
+        public static void main(String[] args) {
+         Assign3 a = new Assign3();
+         a.accept();
+         a.Tarea();
+         a.Carea();
+         a.Rarea();
+         a.dis();
+         }
+    
+    }</code>
+</pre>
 <strong><em><u>Output: - </u></em></strong>
 
 <div class="container">
-    <img class="img img-fluid" src="Images/javaout2.jpg" alt="loading..." height="auto" width="100%"
+    <img class="img img-fluid" src="Images/javaout3.jpg" alt="loading..." height="auto" width="100%"
         style="border-radius: 5px;">
 </div>
+</div>
+
+            </div>
+            <hr>
+            <div class="practical4" id="practical4">
+                <h2 class="head"> Assignment 4 </h2>
+                <h5>21/05/2021</h5><br/>
+                <div class="container">
+                    <strong><em><u> Aim: -</u></em></strong> Write a program to calculate total & average marks using array & check by else if ladder <br /><br />
+                    <strong><em><u>Code: -</u></em></strong><br /><br />
+<pre style="border-radius: 7px 7px 7px 7px;"><code style="border-radius: 7px 7px 7px 7px;;" class="java">
+    //4) WAP to calculate total & average marks using array & check by else if ladder 
+    // 21/05/2021
+    package demo;
+
+    import java.util.Scanner;
+
+    public class Assign4 {
+   
+	public static void main(String[] args) {
+		int n ;
+        float tot=0,avg=0;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter Number of Subjects");;
+		n = sc.nextInt();
+	    int sub[]= new int[n];
+		System.out.println("Enter Marks of "+ n + " subjects -");
+		for(int i=0;i&lt;n;i++) {
+			sub[i] = sc.nextInt();
+		   tot = tot + sub[i];
+	   }
+
+		System.out.println("Total = " + tot);
+		avg = (tot/n);
+		System.out.println("Average = " + avg +"%");
+		if(avg &gt; 75){
+			System.out.println("Distinction");
+		}
+		else if(avg &gt;  60){
+			System.out.println("First Class");
+		}
+		else if(avg &gt;  50){
+			System.out.println("Second Class");
+		}
+		else if(avg &gt;  35){
+			System.out.println("Third  Class");
+		}
+        else{
+            System.out.println("Fail!!!");
+        }
+	}
+	
+}</code></pre> 
+<strong><em><u>Output: - </u></em></strong>
+
+<div class="container">
+    <img class="img img-fluid" src="Images/javaout4.jpg" alt="loading..." height="auto" width="100%"
+        style="border-radius: 5px;">
+</div>   
                 </div>
             </div>
+<hr>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
 
 
-      
-    </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
