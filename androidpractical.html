@@ -399,6 +399,8 @@
                     <ul>
                         <li> A)<a href="#opt"> Option Menu</a> (08/05/2021)</li>
                         <li> B)<a href="#con"> Context Menu</a> (15/05/2021)</li>
+                        <li> B)<a href="#pop"> Popup Menu</a> (22/05/2021)</li>
+
                     </ul>
                     <b id="opt"><em> A) Option Menu: - </em></b><br />
                     <h5
@@ -568,6 +570,109 @@ public class MainActivity extends AppCompatActivity {
                             <img class="img card img-fluid m-2" src="Images/and_ass2_B(1).jpg" width="100%" alt="">
                         </div>
                     </div>
+                    <hr>
+                    <!-- c -->
+                    <b id="pop"><em> C) Popup Menu: - </em></b><br />
+                    <h5
+                        style="background-color: #fff;padding: 5px;color: red;border-radius: 6px 0px 6px 0px ;border: 2px solid black; box-shadow: 2px 2px 10px rgb(255, 255, 255);">
+                        22/05/2021</h5>
+                    <div class="container">
+
+                        <p>
+                            &nbsp;&nbsp; <strong>activity_main.xml</strong>
+                        </p>
+                        <pre style="border-radius: 7px;"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+ &lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".MainActivity"&gt;
+ 
+     &lt;Button
+         android:id="@+id/b1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="160dp"
+         android:layout_marginLeft="160dp"
+         android:layout_marginTop="280dp"
+         android:layout_marginBottom="371dp"
+         android:text="Submit"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" /&gt;
+ 
+ &lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</code></pre>
+                        <p>
+                            <strong> &nbsp;&nbsp; MainActivity.java</strong>
+                        </p>
+                        <pre style="border-radius: 7px;"><code class="java">
+package com.example.popup;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+ Button b;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        b=(Button)findViewById(R.id.b1);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu p = new PopupMenu(MainActivity.this,b);
+                p.getMenuInflater().inflate(R.menu.active_menu,p.getMenu());
+                p.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(MainActivity.this,"You Clicked:"+item.getTitle(),Toast.LENGTH_LONG).show();
+                        return false;
+                    }
+                });
+        p.show();
+            }
+        });
+    }
+}       
+    </code></pre>
+                        <p><strong> &nbsp;&nbsp; active_menu.xml</strong></p>
+                        <pre style="border-radius: 7px;"><code class="xml">
+  &lt;?xml version="1.0" encoding="utf-8"?&gt;
+  &lt;menu xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+  &lt;item android:id="@+id/call"
+      android:title="Call"/&gt;
+      &lt;item android:id="@+id/edit"
+          android:title="Edit"/&gt;
+      &lt;item android:id="@+id/save"
+          android:title="Save"/&gt;
+  &lt;/menu&gt;</code></pre>
+
+                    </div>
+                    <style>
+                        .imgs {
+                            display: flex;
+                            flex-direction: row;
+                        }
+                    </style>
+                                        <strong><em><u> Output: -</u></em></strong>
+
+                    <div class="container">
+                        <div class="imgs">
+                            <img class="img card img-fluid m-2" src="Images/and_ass2C(1).jpg" width="50%" alt="">
+                            <img class="img card img-fluid m-2" src="Images/and_ass2C(2).jpg" width="50%" alt="">
+
+                        </div>
+                    </div>
+                    <!-- c -->
                 </div>
             </div>
 
