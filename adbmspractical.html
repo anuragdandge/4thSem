@@ -690,7 +690,7 @@
   CONSTRAINT emp id pk PRIMARY KEY (id)
   );
  </code></pre>
-
+ <br/><br/><hr>
             <strong><em> 2) SQL Foreign Key or Referential Integrity :</em></strong><br /><br />
             <p>
               This constraint identifies any column referencing the PRIMARY KEY in another table. It establishes a
@@ -744,8 +744,8 @@
      salary number(10),                
      location char(10)
      );
-                </code></pre><br />
-            <strong><em>3) SOL Not Null Constraint:</em></strong><br /><br />
+                </code></pre><br /><hr>
+            <strong><em>3) SQL Not Null Constraint:</em></strong><br /><br />
             <p>
               This constraint ensures all rows in the table contain a definite value for the column which is specified
               as not null. Which means a null value is not allowed.
@@ -763,7 +763,7 @@
     salary number (10),
     location char(10),
     );
-</code></pre><br/><br/>
+</code></pre><br/><br/><hr>
             <strong><em>4) SQL Unique Key:</em></strong><br /><br />
             <p>
               This constraint ensures that a column or a group of columns in each row have a distinct value. A column(s)
@@ -798,7 +798,41 @@ CREATE TABLE employee
      CONSTRAINT loc_un UNIQUE(location)
      );
 </code></pre>
+<br/><br/><hr>
+<strong><b><em> 5) SQL Check Constraints : </em></b></strong><br/><br/>
+<p>
+  This constant defines a business mle on a column. All the rows at satisfy this rule. The constraint can be applied for a single column or a group of columns
+</p><br/>
+<strong><em> Syntax to define a Check constraint</em></strong><br/><br/>
+<pre><code class="sql">[CONSTRAINT constraint_name] CHECK (condition)</code></pre><br/>
+<strong><em>For Example:</em></strong> In the employee table to select the gender of a person, the query would be like<br/><br/>
+<strong><b> Check Constraint at column level: </b></strong><br/><br/>
+<pre><code class="sql">
+  CREATE TABLE employee
+    (id number(5) PRIMARY KEY, name char(20),
+    dept char(10),
+    age number(2),
+    gender char(1) CHECK (gender in ('M','F')),
+    salary number(10),
+    location char(10)
+    );
+</code></pre><br/><br/>
+<strong><em> Check Constraint at Table level : </em></strong><br/><br/>
+<pre><code class="sql">
+  CREATE TABLE employee
+      (id number(5) PRIMARY KEY,
+      name char(20),
+      dept char(10),
+      age number(2),
+      gender char(1),
+      salary number(10),
+      location char(10),
+      CONSTRAINT gender_ck CHECK (gender in ('M','F'))
+      );
+</code></pre>
 
+<br/><br/>
+<p><strong><em>Conclusion :</em></strong> Thus we have studied SQL Constraint Practical use.</p>
           </div>
         </div>
         <!-- Practical 4 End  -->
