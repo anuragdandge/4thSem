@@ -763,14 +763,41 @@
     salary number (10),
     location char(10),
     );
-</code></pre>
+</code></pre><br/><br/>
             <strong><em>4) SQL Unique Key:</em></strong><br /><br />
             <p>
               This constraint ensures that a column or a group of columns in each row have a distinct value. A column(s)
               can have a null value but the values cannot be duplicated.
             </p>
             <strong><b>Syntax to define a Unique key at column level:</b></strong><br /><br />
-            
+            <pre><code class="sql">[CONSTRAINT constraint_name] UNIQUE</code></pre>
+            <strong><b>Syntax to define a Unique key at table level: </b></strong><br /><br />
+            <pre><code class="sql">(CONSTRAINT constraint_name] UNIQUE(column_name)</code></pre>
+            <br/> <strong><b>For Example: </b></strong> To create an employee table with Unique key, the query would be like, <br/><br/>
+            <strong><em>Unique Key at column level:</em></strong><br/><br/>
+
+            <pre><code class="sql">
+CREATE TABLE employee
+   (id number(5) PRIMARY KEY,
+   name char(20),
+   dept char(10),
+   age number(2),
+   salary number(10),
+   location char(10) UNIQUE
+   );
+            </code></pre>
+            <strong><em>Unique Key at table level:</em></strong><br/><br/>
+<pre><code class="sql">
+  CREATE TABLE employee
+     (id number(5) PRIMARY KEY,
+     name char(20).
+     dept char(10),
+     age number(2),
+     salary number(10).
+     location char(10),
+     CONSTRAINT loc_un UNIQUE(location)
+     );
+</code></pre>
 
           </div>
         </div>
