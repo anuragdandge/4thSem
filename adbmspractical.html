@@ -671,7 +671,7 @@
             <strong><b><em> <u> Primary Key at column level :</u></em></b></strong><br /><br />
             <pre>
                  <code class="SQL"> CREATE TABLE employee
- (id number(5) CONSTRAINT emp id pk PRIMARY KEY,
+ (id number(5) CONSTRAINT emp_id_pk PRIMARY KEY,
  name char(20),
  dept char(10),
  age number(2),
@@ -687,7 +687,7 @@
   age number(2),
   salary number(10),
   location char(100,
-  CONSTRAINT emp id pk PRIMARY KEY (id)
+  CONSTRAINT emp_id_pk PRIMARY KEY (id)
   );
  </code></pre>
  <br/><br/><hr>
