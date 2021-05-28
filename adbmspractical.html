@@ -678,7 +678,7 @@
  salary number(10),
  location char(10)
  );</code></pre>
-            <strong><b><em><u>Primary Kev at table level:</u></em></b></strong><br /><br />
+            <strong><b><em><u>Primary Key at table level:</u></em></b></strong><br /><br />
             <pre><code class="SQL">
   CREATE TABLE employee
   (id number(5),
@@ -686,7 +686,7 @@
   dept char(10),
   age number(2),
   salary number(10),
-  location char(100,
+  location char(100),
   CONSTRAINT emp_id_pk PRIMARY KEY (id)
   );
  </code></pre>
@@ -714,7 +714,7 @@
             <strong><b><em>Foreign Key at column level:</em></b></strong><br /><br />
             <pre><code class="sql">
   CREATE TABLE product
-    (product id number(5) CONSTRAINT pd id pk PRIMARY KEY,
+    (product_id number(5) CONSTRAINT pd_id_pk PRIMARY KEY
     product_name char(20),
     supplier name char(20),
     unit_price number(10);
