@@ -250,6 +250,9 @@
                         <li><a class="dropdown-item" href="#practical4" id="bold"> Assignment 4 </a></li>
                         <li><a class="dropdown-item" href="#practical5" id="bold"> Assignment 5 </a></li>
                         <li><a class="dropdown-item" href="#practical6" id="bold"> Assignment 6 </a></li>
+                        <li><a class="dropdown-item" href="#practical7" id="bold"> Assignment 7 </a></li>
+                        <li><a class="dropdown-item" href="#practical8" id="bold"> Assignment 8 </a></li>
+
 
 
                     </ul>
@@ -582,6 +585,98 @@ public class Assignment6_B {
 
                     <div class="container">
                         <img class="img img-fluid" src="Images/javaout6B.jpg" alt="loading..." height="auto"
+                            width="100%" style="border-radius: 5px;">
+                    </div>
+
+                </div>
+            </div>
+            <div id="practical7">
+                <h2 class="head">Assignment 7</h2>
+                <h5>02/06/2021</h5><br/>
+                <div class="container">
+                    <strong><em><u> Aim: -</u></em></strong> Write a Program to demonstrate method overloading & method Overriding. <br /><br />
+                    <strong><em><u>Code: -</u></em></strong><br /><br />
+<pre><code class="java">
+public class Asssignment7 {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        //WAP to demonstrate method overloading & method Overriding
+        //02/06/2021
+        overload o = new overload();
+        o.overloaddata();
+        o.display();
+        
+        o.overloaddata(10, 20);
+        o.display();
+    }
+}
+      class overload{
+            int a,b;
+            public void overloaddata() {
+                a=5;
+                b=10;
+            }
+            public void overloaddata(int x,int y) {
+                a=x;
+                b=y;
+            }
+            public void display() {
+                System.out.println("Value of a="+a);
+                System.out.println("Value of b="+b);
+            }
+            
+      }</code></pre>
+      <strong><em><u>Output: - </u></em></strong>
+
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/javaout7.jpg" alt="loading..." height="auto"
+                            width="100%" style="border-radius: 5px;">
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div id="practical8">
+                <h2 class="head">Assignment 8</h2>
+                <h5>02/06/2021</h5><br/>
+                <div class="container">
+                    <strong><em><u> Aim: -</u></em></strong> Write a Program to demonstrate Single Inheritance. <br /><br />
+                    <strong><em><u>Code: -</u></em></strong><br /><br />
+<pre><code class="java">
+    
+  public class Assignment8 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//WAP to demonstrate Single Inheritance 
+		//02/06/2021
+		inheritance obj = new inheritance();
+		obj.getData();
+		obj.calculate();
+	}
+}
+
+class apk{
+		 int a,b;
+	     void getData() {
+	     	a=10;
+	     	b=20;
+	     }	
+	}
+  class inheritance extends apk{
+	  int c;
+	  void calculate()
+	  {
+		  c=a+b;
+		  System.out.println("Addition = "+ c);
+	  }
+  }
+
+</code></pre>
+      <strong><em><u>Output: - </u></em></strong>
+
+                    <div class="container">
+                        <img class="img img-fluid" src="Images/javaout8.jpg" alt="loading..." height="auto"
                             width="100%" style="border-radius: 5px;">
                     </div>
 
