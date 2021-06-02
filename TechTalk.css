@@ -1,9 +1,6 @@
 body{
     background-image: linear-gradient(135deg, #ABDCFF 20%, #ABDCFF 100%);
 }
-.main {
-    /* background-image: linear-gradient(135deg, #ABDCFF 10%, #0396FF 100%); */
-}
 .box{
     display: flex;
     flex-direction: row;
@@ -27,7 +24,9 @@ img{
     border-top-right-radius: 5px;
     background-image: linear-gradient(135deg, #17125f80 30%, #0c095e80 100%);
 }
-a{
-    text-decoration: none;
-    color: white;
+.insta{
+    background-color: rgba(240, 248, 255, 0.185);
+    border-radius: 6px;
+    box-shadow: inset .5px 1px 5px 2px rgba(255, 255, 255, 0.39);
 }
+
