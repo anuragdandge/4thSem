@@ -684,6 +684,73 @@ class apk{
 
                 </div>
             </div>
+            <hr>
+            <!-- Practical NO. 9  -->
+            <div id="practical9">
+                <h2 class="head">Assignment 9</h2>
+                <h5>11/06/2021</h5>
+                <div class="container">
+                    <strong><em><u> Aim: -</u></em></strong> Write a Program to run and demonstrate program in command Line.
+                    <br /><br />
+                    <strong><em><u>Code: -</u></em></strong><br /><br />
+<pre><code class="java">public class pgm9 {
+    public static void main(String[] args) {
+        String s;
+        int count;
+        count = args.length;
+        System.out.println("No. of args "+count);
+        for (int i = 0; i < count; i++) {
+            System.out.println(args[i]);
+        }
+    }
+}</code></pre>
+<strong><em><u>Output: - </u></em></strong>
+
+<div class="container">
+    <img class="img img-fluid" src="Images/out9.png" alt="loading..." height="auto" width="100%"
+        style="border-radius: 5px;">
+</div>
+                </div>
+            </div>
+            <hr>
+            <!-- Assignment no. 10  -->
+            <div id="practical10">
+                <h2 class="head">Assignment 10</h2>
+                <h5>11/06/2021</h5>
+                <div class="container">
+                    <strong><em><u> Aim: -</u></em></strong> Write a Program to demonstrate abstract class.
+                    <br /><br />
+                    <strong><em><u>Code: -</u></em></strong><br /><br />
+<pre><code class="java">abstract class base1 {
+        abstract void dis();
+        void show() {
+            System.out.print(" \n Sample method ");
+        }
+    }
+    class derived extends base1{
+        void dis(){
+            System.out.print(" \n abstract method ");   
+        }
+    }
+    
+    public class App {
+        public static void main(String[] args) throws Exception {
+            // System.out.println("Hello, World!");
+            derived d = new derived();
+            d.show();
+            d.dis();
+        }
+    }</code></pre>
+    <strong><em><u>Output: - </u></em></strong>
+
+<div class="container">
+    <img class="img img-fluid" src="Images/javaout10.jpg.png" alt="loading..." height="auto" width="100%"
+        style="border-radius: 5px;">
+</div>
+
+                </div>
+            </div>
+            <br/> <br/>
         </div>
 
         <!-- Optional JavaScript; choose one of the two! -->
